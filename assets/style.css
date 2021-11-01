@@ -1,0 +1,17 @@
+*{
+  background-color: black;
+  color: green;
+}
+
+a{
+  text-decoration: none;
+}
+
+details{
+  background-color: darkgrey;
+}
+
+img {
+  width: 300;
+  max-height: 400;
+}
