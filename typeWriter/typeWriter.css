@@ -9,8 +9,10 @@ h1 {
   padding-top:;
 }
 
-* { color:green;
+* { 
+	color:green;
 	text-decoration: none;
+	font-family: monospace, sans-serif;
 }
 
 .strip {
