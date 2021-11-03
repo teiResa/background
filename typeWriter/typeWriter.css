@@ -1,0 +1,29 @@
+*{
+  background-color: white;
+}
+
+h1 {
+  background-color:white;
+  text-align: left;
+  color:#fff;
+  padding-top:;
+}
+
+* { color:green;
+	text-decoration: none;
+}
+
+.strip {
+	/* Change curser stuff below*/
+	border-right: 0.08em solid purple;
+	animation: cursor 1s steps(1) infinite;
+}
+
+@keyframes cursor {
+	0%, 100% {}
+  40% {
+    border-color: transparent;
+
+  }
+}
+/* Keyframes are used below to make the curser blink */
