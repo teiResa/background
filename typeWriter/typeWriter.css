@@ -6,13 +6,14 @@ h1 {
   background-color:white;
   text-align: left;
   color:#fff;
-  padding-top:;
+  padding-top: 10%;
+  padding-left: 10%;
 }
 
-* { 
+* {
 	color:green;
 	text-decoration: none;
-	font-family: monospace, sans-serif;
+
 }
 
 .typeWriter {
