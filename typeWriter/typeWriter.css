@@ -15,6 +15,10 @@ h1 {
 	font-family: monospace, sans-serif;
 }
 
+.typeWriter {
+	font-family: monospace, sans-serif;
+}
+
 .strip {
 	/* Change curser stuff below*/
 	border-right: 0.08em solid purple;
