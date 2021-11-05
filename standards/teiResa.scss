@@ -1,0 +1,51 @@
+/* For the <head> sections of pages
+
+<title>Backgrounds by teiResa</title>
+
+<link rel="icon" href="assets/teiResaHead.ico">
+<link rel="stylesheet" href="assets/style.css">
+
+
+*/
+
+//Reference the following throughout site
+
+.pg-title {}
+.pg-slogan{
+  font-family: gaegu;
+}
+
+.title-section {}
+.title-subsection{}
+
+.link0{}
+.link1{}
+.link2{}
+
+
+
+
+
+/*
+                    The Colour Pallette
+This section is based off the original (8-bit) logo and the CSS logo.
+ */
+
+$purple: #5e5ebb;
+$purplepinky: purple;
+
+$lipstick0: #BD6461;    //Lips in 8-bit, but it it's without lipstick.
+    $lipstick0Light: #DC8D88;    //peachy nude
+$lipstick1: #895B6D;
+$lipstick2: #926265;    // can also be "nude lips"
+
+$green: #387543;
+$greenDark: #14481D;
+$greenXDark: #013220;
+
+$brown0: #553D32;
+    $brown0Light: #6A4E42;
+
+//For hovering things.        (JUST STACK THEM to make more visible.)
+$hover-White0:  #ffffff44;
+$hover-White1:
