@@ -2,15 +2,20 @@
 
 <title>Backgrounds by teiResa</title>
 
-<link rel="icon" href="assets/teiResaHead.ico">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="../assets/teiResaHead.ico">
+<link rel="stylesheet" href="../assets/style.css">
 
 
 */
 
 //Reference the following throughout site
 
-.pg-title {}
+body {
+  background-color: pink;
+}
+
+.pg-title {
+}
 .pg-slogan{
   font-family: gaegu;
 }
