@@ -4,16 +4,19 @@ body {
 
 }
 
-#progThermometer {
-  border: px dashed grey;
-  max-width: 200px;
+#progThermometer-app {}
 
-  border-radius: 55px;
+#progThermometer-app ul {
+  list-style-type: none;
 }
 
-#progThermometer ul {
-  list-style-type: none;
-
+#progThermometer {
+  border: 2px blue solid;
+  border-radius: 15px;
+  max-width: 250px;
+  min-width: 160px;
+  padding: 4px;
+  background-color: grey;
 }
 
 #progThermometer li .certs {}
@@ -34,28 +37,28 @@ body {
   align-items: center;
   justify-content: center;
 
-  border: 2px dashed grey;
+  border: 1px solid grey;
 
   width:98%;
-  height: 65px;
+  height: 45px;       /* was 65px with SVGs not commented out*/
 
 }
 
 .progBox:hover{
   color: black;
-  background-color: darkgrey;
+  background-color: white;
 }
 
  .NA {
-  background-color: grey;
+  background-color: lightgrey;
 }
 
  .PROG {
-   background-color: yellow;
+   background-color: lightyellow;
  }
 
  .PASS {
-  background-color: green;
+  background-color: lightgreen;
 }
 
 .margin-box{
@@ -66,13 +69,16 @@ body {
 
 }
 
-.icon-m-box {}
+.icon-m-box {
+  background-color: #ffffff55;
+  width: 50%;
+}
 
 span .sr-only {}
 
 .margin-box svg {
-
-  width: 25%;
+    /* should I put the SVGs as background watermarks? */
+  width: 70%;
   max-height: 2em;
   border: 1px dashed grey;
 }
@@ -81,5 +87,5 @@ span .sr-only {}
   margin: 2px;
   padding: 2px;
 
-  background-color: pink ;
+  background-color: #ffffff55;
 }
