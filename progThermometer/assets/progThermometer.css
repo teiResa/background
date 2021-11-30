@@ -26,6 +26,8 @@ body {
 #progThermometer li .certs {}
 
 
+
+
 #progThermometer .toProjects {
   text-decoration: none;
   color: darkgrey;
@@ -34,7 +36,13 @@ body {
 #progThermometer .toProjects:hover {
   color: black;
   background-color: white;
+
 }
+
+#bulb-toProjects {
+}
+
+#bulb-toProjects:hover {}
 
 .progBox {
   display: flex;
@@ -60,21 +68,30 @@ body {
   width: 280px;
 }
 
-#notBulb {
-  z-index: ;
-}
+
+#notBulb {}
 
 .progBox:hover{
   color: black;
-  background-color: white;
+
 }
 
  .NA {
   background-color: lightgrey;
 }
 
+.NA .title-m-box:hover {
+  background-color: white;
+  color: darkgrey;
+}
+
  .PROG {
    background-color: #FCAE1E;
+ }
+
+ .PROG .title-m-box:hover {
+   background-color: #ffffff55;
+   color: black;
  }
 
  .PASS {
@@ -83,6 +100,11 @@ body {
 
 .PASS:hover {
  /* SEE " #progThermometer .toProjects:hover " to edit this */
+ background-color: lightgreen;
+}
+
+.PASS a:hover {
+  background-color: lightgreen;
 }
 
 .margin-box{
