@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <style media="screen">
+        .d-flex {
+          display: flex;
+        }
+        .justify-content-center {
+          justify-content: center;
+        }
+        .align-items-center {
+          align-items: center;
+        }
+        .vh-100 {
+          height: 100vh;
+        }
+        .position-absolute {
+          position: absolute;
+        }
+
+        /* SCROLL-DOWN ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+        .scroll-down {
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          text-transform: uppercase;
+          transition: all 0.5s;
+        }
+
+        .scroll-down.is-hidden {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        .scroll-down::after {
+          content: "";
+          display: block;
+          margin: 3px auto 0;
+          width: 1px;
+          height: 60px;
+          background: var(--black);
+          transform-origin: bottom;
+          animation: pulse 3.5s infinite linear;
+        }
+
+
+    </style>
+
+
+    <section class="d-flex justify-content-center align-items-center vh-100">
+      <div class="position-absolute scroll-down">
+        Scroll
+        <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+</svg>
+        Down</div>
+    </section>
+
+
+
+
+    <script type="text/javascript">
+
+      const scrollDown = document.querySelector(".scroll-down");
+
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      window.addEventListener("scroll", scrollHandler);
+
+      function scrollHandler() {
+        window.pageYOffset > 0
+          ? scrollDown.classList.add("is-hidden")
+          : scrollDown.classList.remove("is-hidden");
+
+      }
+
+
+
+
+
+    </script>
+
+
+
+  </body>
+</html>
