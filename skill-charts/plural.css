@@ -6,6 +6,7 @@
   --black: #1a1a1a;
   --lightwhite: whitesmoke;
   --lightblue: #009dd3;
+  --indigo: indigo;
   --peach: #ff9469;
   --transition-delay: 0.3s;
   --transition-delay-step: 0.3s;
@@ -79,6 +80,13 @@ a {
   text-align: center;
 }
 
+.text-vertical {
+  margin-left: 15%;
+  font-family: monospace;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
 .text-gray {
   color: var(--gray);
 }
@@ -114,27 +122,7 @@ body {
   color: var(--black);
 }
 
-/* HEADER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.page-header {
-  left: 0;
-  right: 0;
-  top: 0;
-  padding: 20px;
-  z-index: 10;
-}
 
-.page-header .logo {
-  font-size: 1.7rem;
-}
-
-.page-header li:not(:last-child) {
-  margin-right: 20px;
-}
-
-.page-header a {
-  font-size: 1.1rem;
-}
 
 /* SCROLL-DOWN
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -162,11 +150,10 @@ body {
   animation: pulse 3.5s infinite linear;
 }
 
-/* BG IMG
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* background Image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .bg-img {
   background: #fff
-    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/code-wp.jpg)
+    url(https://teiresa.github.io/background/assets/planet%20tei%201%20mobile.png)
     no-repeat center / cover;
 }
 
@@ -182,8 +169,7 @@ body {
   transform-origin: left bottom;
 }
 
-/* CHART
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* skills chart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .chart-wrapper {
   width: 95%;
   max-width: 500px;
@@ -208,38 +194,46 @@ body {
 
 .chart-wrapper .chart-skills li::before {
   width: 0;
-  background: var(--lightblue);
+  background: var(--indigo);
   transition: width 0.65s ease-out;
 }
 
+
+/*
+      width: calc(_________% - var(--skills-width));
+
+      Update the blank with scores.
+*/
+
+
 .chart-wrapper.in-view .chart-skills li:nth-child(1)::before {
-  width: calc(90% - var(--skills-width));
+  width: calc(80% - var(--skills-width));
   transition-delay: var(--transition-delay);
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
-  width: calc(75% - var(--skills-width));
+  width: calc(62% - var(--skills-width));
   transition-delay: calc(
     var(--transition-delay) + var(--transition-delay-step)
   );
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(3)::before {
-  width: calc(62% - var(--skills-width));
+  width: calc(76% - var(--skills-width));
   transition-delay: calc(
     var(--transition-delay) + var(--transition-delay-step) * 2
   );
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(4)::before {
-  width: calc(49% - var(--skills-width));
+  width: calc(45% - var(--skills-width));
   transition-delay: calc(
     var(--transition-delay) + var(--transition-delay-step) * 3
   );
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(5)::before {
-  width: calc(38% - var(--skills-width));
+  width: calc(46% - var(--skills-width));
   transition-delay: calc(
     var(--transition-delay) + var(--transition-delay-step) * 4
   );
@@ -274,16 +268,6 @@ body {
   width: 100%;
 }
 
-/* CREATOR
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.creator {
-  right: 20px;
-  bottom: 20px;
-}
-
-.creator span {
-  color: #e31b23;
-}
 
 /* ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
