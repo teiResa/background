@@ -136,6 +136,9 @@ body {
 
 /* SCROLL-DOWN
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* For screen-reader note, see the Accessibility section at the bottom. */
+
 .scroll-down {
   left: 50%;
   bottom: 0;
@@ -313,4 +316,11 @@ body {
   html {
     font-size: 12px;
   }
+}
+
+/* Accessibility ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.s-reader-note {
+  border: red 2px dashed;
+  width: 100vw;
+  height: 30vh;
 }
