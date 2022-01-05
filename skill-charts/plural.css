@@ -4,7 +4,7 @@
   --gray: #cbcfd3;
   --white: white;
   --black: #1a1a1a;
-  --lightwhite: whitesmoke;
+  --lightwhite: black;
   --lightblue: #009dd3;
   --indigo: indigo;
   --peach: #ff9469;
@@ -107,6 +107,16 @@ a {
   background: var(--lightwhite);
 }
 
+.bg-novice {
+  background-color: #ffc200 !important ;
+}
+.bg-proficient{
+  background-color: #86ce21 !important;
+}
+.bg-expert{
+  background-color: #26c1fb !important;
+}
+
 .h1 {
   font-size: 2.5rem;
 }
@@ -140,19 +150,25 @@ body {
 }
 
 .scroll-down::after {
-  content: "";
+  content: "↓";
+  font-size: 3em;
   display: block;
-  margin: 3px auto 0;
-  width: 1px;
+  margin: 3px;
+  width: 9px;
   height: 60px;
-  background: var(--black);
+  background: var(--lack);
   transform-origin: bottom;
   animation: pulse 3.5s infinite linear;
 }
 
 /* background Image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
 .bg-img {
-  background: #fff
+  min-height: 870px;
+  left: -15px;
+  background: black
     url(https://teiresa.github.io/background/assets/planet%20tei%201%20mobile.png)
     no-repeat center / cover;
 }
@@ -167,12 +183,14 @@ body {
   background: var(--lightwhite);
   transform: skew(-5deg);
   transform-origin: left bottom;
+  z-index: -2;
 }
 
 /* skills chart ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .chart-wrapper {
   width: 95%;
   max-width: 500px;
+  margin-top: 25%;
 }
 
 .chart-wrapper .chart-skills li::before,
