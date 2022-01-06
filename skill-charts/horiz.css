@@ -1,4 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Oswald');
+$border-color: #1a233d;
+$animation-duration: 0.5s;
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ for the skills chart */
 body {
 	margin: 20px 0 40px;
 	font-family: "Open Sans", sans-serif;
