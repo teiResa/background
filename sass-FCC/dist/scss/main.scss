@@ -1,0 +1,24 @@
+@import './resets';
+@import './variables';
+
+
+
+body {
+  background: blue;
+  color: $text-color;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+
+  /* the & just means .main here. Interpolation is with #{&} which makes it .main .main-paragraph, rather than just .main-paragraph */
+  #{&}__paragraph {
+    font-weight: map-get($font-weights, bold );
+
+    &:hover {
+      color:pink;
+    }
+  }
+}

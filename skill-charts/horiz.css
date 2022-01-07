@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro|Oswald');
-$animation-duration: 0.5s;
+
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@ $animation-duration: 0.5s;
         flex-direction: column;
         align-items: center;
         transition: all 0.5s;
-        border: $border-color;
+        border: #1a233d;
         position: relative;
         overflow: hidden;
         z-index: 1;
