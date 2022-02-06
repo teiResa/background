@@ -22,26 +22,21 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  background: url('../assets/background_image.jpg');
-  background-color : black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  
 }
 main::before {
-  background-image: url(https://teiresa.github.io/background/assets/cloud-bears.jpg);
+  
   /*Everything in here was to get the background to fade without effecting anything else.*/
   content: "";
-  background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/img/bg-happy.jpg);
-  opacity: .3;
+  background: url(https://teiresa.github.io/background/assets/cloud-bears.jpg); 
+  background-size: 300px;
+  background-repeat: repeat;
+  opacity: .8;
   position:absolute;
   top:0;
   bottom:0;
   right:0;
   left:0;
-  width:auto;
-  height:auto;
   z-index:-5;
 }
 
@@ -58,11 +53,26 @@ main::before {
 
 .game-details-container{
   color: #666;
-  width: 80%;
+  width: 100%;
   height: 4rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.banner:before, .banner:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 10px double #8dbabb;
+  opacity: .4;
+  margin: auto;
+}
+
+#banner-spacer{
+  content: "";
+  width: 12%;
+  border-bottom: 10px double #8dbabb;
+  opacity: .4;
 }
 
 .game-details-container h1{
@@ -75,19 +85,21 @@ main::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid darkgray;
+  background-color: #8dbabbc2;
+  color: ivory;
+  border: 2px solid #8dbabb;
   border-radius: 25px;
 }
 
 .game-question-container h1{
-  font-size: 1.1rem;
+  font-size: 1.9rem;
   text-align: center;
   padding: 3px;
 }
 
 .game-options-container{
   width: 80%;
-  height: 12rem;
+  height: 12em;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -96,8 +108,9 @@ main::before {
 
 .game-options-container span{
   width: 45%;
-  height: 3rem;
-  border: 2px solid darkgray;
+  height: 22%;
+  background-color:honeydew; 
+  border: 2px solid #8dbabb;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -114,10 +127,10 @@ span label{
 }
 
 span label:hover{
-  -ms-transform: scale(1.7);
-  -webkit-transform: scale(1.7);
-  transform: scale(1.7);
-  color: purple;
+  -ms-transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+  color: #8dbabb;
 }
 
 input[type="radio"] {
@@ -127,7 +140,7 @@ input[type="radio"] {
 
 
 input[type=radio]:checked ~ .option {
-  background: paleturquoise;
+  background: #8dbabb;
 }
 
 .next-button-container{
@@ -143,12 +156,13 @@ input[type=radio]:checked ~ .option {
   background: none;
   color: rgb(25, 25, 25);
   font-weight: 600;
-  border: 2px solid gray;
+  border: 2px solid rgba(255, 192, 203, 0.384);
   cursor: pointer;
   outline: none;
 }
 .next-button-container button:hover{
-  background-color: rgb(143, 93, 93);
+  background-color: pink;
+  font-size: 1.3rem;
 }
 
 .modal-container{
@@ -189,7 +203,9 @@ input[type=radio]:checked ~ .option {
 
 .grade-details{
   width: 15rem;
-  height: 10rem;
+  height: 9rem;
+  z-index: 1;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -199,6 +215,36 @@ input[type=radio]:checked ~ .option {
 .grade-details p{
   color: white;
   text-align: center;
+}
+
+.grade-icon {
+  height: 180px;
+  position:relative;
+  top: -15px;
+  color: rgb(53, 52, 52);
+  font-size: 12em;
+  z-index: 0;
+}
+
+.game-options-container .pick-icon {
+  background:none;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.pick-icon {
+  height: 40px;
+  position:relative;
+  top: -15px;
+  color: rgb(53, 52, 52);
+  font-size: 2em;
+  z-index: 0;
+}
+
+ .kitty {
+  font-size: 5em;
+  top: -85px;
 }
 
 .modal-button-container{
@@ -214,14 +260,19 @@ input[type=radio]:checked ~ .option {
   height: 2rem;
   background: none;
   outline: none;
-  border: 1px solid rgb(252, 242, 241);
-  color: white;
+  border: 1px solid pink;
+  color: pink;
   font-size: 1.1rem;
   cursor: pointer;
   border-radius: 20px;
 }
 .modal-button-container button:hover{
-  background-color: rgb(83, 82, 82);
+  width: 12rem;
+  height: 2.4rem;
+  background-color: pink;
+  color: rgb(43, 42, 42);
+  border-color: rgb(43, 42, 42);
+  font-size: 1.8rem;
 }
 
 @media(min-width : 300px) and (max-width : 350px){
@@ -243,6 +294,7 @@ input[type=radio]:checked ~ .option {
   .game-options-container span{
       width: 90%;
       height: 2.5rem;
+      background-color: pink;
   }
   .game-options-container span label{
       font-size: 0.8rem;
@@ -286,6 +338,12 @@ input[type=radio]:checked ~ .option {
   }
 }
 
+@media(min-width : 701px) {
+  .game-options-container span{
+    height: 42%;
+  }
+
+}
 
 
 @keyframes fadeIn {
