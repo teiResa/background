@@ -65,7 +65,7 @@
       correctOption: "optionD"
   },
   {
-      question: "FE vs BE. Which is most correct?,
+      question: "FE vs BE. Which is most correct?",
       optionA: "Everything the user interacts with is BE.",
       optionB: "Everything the user interacts with is FE.",
       optionC: "Trick question. They overlap too much to differentiate.",
