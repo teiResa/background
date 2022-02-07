@@ -299,6 +299,7 @@ input[type=radio]:checked ~ .option {
   }
   .game-options-container span label{
       font-size: 0.8rem;
+      width: 100%;
   }
   .modal-content-container{
       width: 90%;
@@ -338,7 +339,7 @@ input[type=radio]:checked ~ .option {
   }
 
   .game-options-container span label {
-    width: 90%;
+    width: 100%;
     padding-left: 7%;
   }
 
@@ -367,8 +368,8 @@ input[type=radio]:checked ~ .option {
     height: 45%;
   }
   .game-options-container span label {
-    width: 90%;
-    padding: 5% 5% 5% 10%;
+    width: 100%;
+    padding: 5% 7% 5% 10%;
   }
 
   .modal-content-container{
