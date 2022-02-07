@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UX Quiz</title>
 
-  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="../quiz.css">
+  <link rel="stylesheet" href="set.css">        <!-- duplicate this css per questions set-->
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&amp;family=Gaegu:wght@300;400&amp;family=Stylish&amp;display=swap" rel="stylesheet">
 </head>
 
 <body onload="NextQuestion(0)">
@@ -16,12 +18,13 @@
 
             <div class="modal-content-container">
 
-                <h1>Congratulations, Quiz Completed.</h1>
+                <h1>Your results.</h1>
+                <span class="grade-icon"><i class="fas fa-graduation-cap"></i></span>
 
                 <div class="grade-details">
                     <p>Attempts : 10</p>
-                    <p>Wrong Answers : <span id="wrong-answers"></span></p>
-                    <p>Right Answers : <span id="right-answers"></span></p>
+                    <p><i class="fas fa-check"></i> : <span id="right-answers"></span></p>
+                    <p><i class="fas fa-times"></i> : <span id="wrong-answers"></span></p>
                     <p>Grade : <span id="grade-percentage"></span>%</p>
                     <p ><span id="remarks"></span></p>
                 </div>
@@ -36,10 +39,13 @@
 
         <div class="game-quiz-container">
 
-            <div class="game-details-container">
-                <h1>Score : <span id="player-score"></span> / 10</h1>
-                <h1> Question : <span id="question-number"></span> / 10</h1>
+            <div class="game-details-container banner">
+                <h1>&nbsp;Score: <span id="player-score"></span> / 10 &nbsp;</h1>
+                <div id="banner-spacer"></div>
+                <h1>&nbsp; Question: <span id="question-number"></span> / 10 &nbsp;</h1>
             </div>
+
+            
 
             <div class="game-question-container">
                 <h1 id="display-question"></h1>
@@ -50,7 +56,13 @@
                <div class="modal-container" id="option-modal">
 
                     <div class="modal-content-container">
-                         <h1>Please Pick An Option</h1>
+
+                        
+
+                        <h1>Please Pick An Option</h1>
+
+                        <span class="pick-icon questionmark"><i class="fas fa-question"></i></span>
+                        <span class="pick-icon kitty"><i class="fas fa-cat"></i></span>
 
                          <div class="modal-button-container">
                             <button onclick="closeOptionModal()">Continue</button>
@@ -92,7 +104,10 @@
 
         </div>
     </main>
-    <script src="quiz.js"></script>
-    <script src="quiz-ux/questions.js"></script>
+    <script src="../quiz.js"></script>
+    <script src="questions.js"></script>      <!-- duplicate and update per quiz. Each quiz gets own folder. -->
+    <!-- fontawesome kit-->
+    <script src="https://kit.fontawesome.com/b9730a3ea0.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

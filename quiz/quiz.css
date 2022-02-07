@@ -92,7 +92,7 @@ main::before {
 }
 
 .game-question-container h1{
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 3px;
 }
@@ -114,6 +114,7 @@ main::before {
   border-radius: 20px;
   overflow: hidden;
 }
+
 span label{
   width: 100%;
   height: 100%;
@@ -319,19 +320,33 @@ input[type=radio]:checked ~ .option {
   }
 
   .game-question-container{
-      height: 8rem;
+      height: 11rem;
+      width: 95%;
   }
 
   .game-question-container h1{
       font-size: 0.9rem;
    }
 
+   .game-options-container {
+     height: 18rem;
+     width: 93%;
+   }
+
   .game-options-container span{
-      width: 90%;
+      width: 100%;
   }
+
+  .game-options-container span label {
+    width: 90%;
+    padding-left: 7%;
+  }
+
   .modal-content-container{
-      width: 90%;
-      height: 25rem;
+      width: auto;
+      max-width: 70%;
+      min-width: 60%;
+      height: 20rem;
   }
   .modal-content-container h1{
       font-size: 1.2rem;
@@ -339,9 +354,35 @@ input[type=radio]:checked ~ .option {
 }
 
 @media(min-width : 701px) {
-  .game-options-container span{
-    height: 42%;
+  .game-question-container{
+    height: 10rem;
   }
+  
+  .game-question-container h1{
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  .game-options-container span{
+    height: 45%;
+  }
+  .game-options-container span label {
+    width: 90%;
+    padding: 5% 5% 5% 10%;
+  }
+
+  .modal-content-container{
+    height: 18rem;
+    padding: 9rem auto;
+  }
+
+  .modal-content-container::before, .modal-content-container::after {
+    content: "";
+    height: 15px;
+  }
+    
+
+  
 
 }
 

@@ -1,0 +1,144 @@
+
+* {
+  font-family: 'Gaegu', cursive;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+
+.main-container{
+  width: 80%;
+  background-color: honeydew;
+  border: 2px solid #8dbabb52;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+.main-container::before {
+  
+  /*Everything in here was to get the background to fade without effecting anything else.*/
+  content: "";
+  background: url(https://teiresa.github.io/background/assets/cloud-bears.jpg); 
+  background-size: 300px;
+  background-repeat: repeat;
+  opacity: .8;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  z-index:-5;
+}
+
+.banner {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.banner:before, .banner:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 10px double #8dbabb;
+  opacity: .4;
+  margin: auto;
+}
+
+#banner-spacer{
+  content: "";
+  width: 6%;
+  border-bottom: 10px double #8dbabb;
+  opacity: .4;
+}
+
+.game-details-container h1{
+  font-size: 1.2rem;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~ page content ~~~~~~~~~~~~~*/
+
+main{
+  width: 90%;
+  display: flex;
+  align-self: center;
+  padding-bottom: 5%;
+}
+
+.table-container {
+  width: 100%;
+}
+
+
+
+th {
+  background-color:#8dbabb6e;
+ }
+
+tr:nth-child(odd) {
+  background-color: #8dbabb31;
+}
+
+.td-name{
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-link {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer stuff below */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 50px;
+  background-color: honeydew;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+} 
+
+.text-muted {
+  color: #6c757d9c !important;
+}
+
+@media(min-width : 300px) and (max-width : 350px){}
+
+@media(min-width : 350px) and (max-width : 700px){}
+
+@media(min-width : 701px) {}

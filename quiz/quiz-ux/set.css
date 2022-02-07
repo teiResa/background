@@ -1,0 +1,10 @@
+/* for long texts only. comment out for short options. i'd comment out so you don't have to make the effort later */
+
+span label:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  color: #8dbabb;
+}
+
+
