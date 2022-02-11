@@ -5,11 +5,8 @@ setInterval(showTime, 1000);
 function showTime() {
 	let time = new Date();
 	let min = time.getMinutes();
-  let hour = time.getHours();
 	clock = "🕑";
 
-  // var numbers = ("0" + today.getMinutes()).slice(-2) + ":" + ("0" + today.getSeconds()).slice(-2)
-  // document.getElementById('clock_anim').innerHTML = numbers;
 
 
   // if lessthan b and greater than a.
@@ -83,59 +80,6 @@ function showTime() {
 
 }
 showTime();
-
-
-
-
-
-
-
-// setInterval(function(){
-//   let i = 5;
-//  	 const timer = setInterval(() => {
-//     // start of timer
-//       var today = new Date();
-// 			var time = ("0" + today.getHours()).slice(-2) + ":" + ("0" + today.getMinutes()).slice(-2) 
-//       document.getElementById("clock_animation").innerHTML = time;
-		  
-//       var c = ["🕐","🕑","🕒","🕓","🕔","🕕","🕖","🕗","🕘","🕙","🕚","🕛"];
-
-//       let min = time.getMinutes();
-//       clock = "🕐";
-    
-//       if (min > 30) {
-//           min -= 30;
-//           clock = "🕒";
-//       }
-//       if (hour == 0) {
-//           hr = 12;
-//           am_pm = "AM";
-//       }
-
-
-
-//       // function loop() {
-//       //     location.hash = c[Math.floor((Date.now()/100)%c.length)];
-  
-//       //     setTimeout(loop, 50);
-//       // }
-  
-//       // loop();
-		
-		
-// 			i--;
-//       if (i < 0) {
-//           clearInterval(timer)
-//       }
-
-//     // end of timer
-//   }, 30000);
-// });
-
-
-
-
-
 
 
 

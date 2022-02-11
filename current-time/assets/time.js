@@ -1,14 +1,3 @@
-// var today = new Date();
-// var day = today.getDay();
-// var daylist = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-// var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-// var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-// var dateTime = date+' at '+time;
-
-// // document.getElementById("curr_time").innerHTML = dateTime + ' <br> Day: ' + daylist[day];
-// document.getElementById("curr_time").innerHTML = 'For me it is currently ' + daylist[day] + ' ' + dateTime ;
-
-
 
 setInterval(function(){
   let i = 5;
@@ -34,6 +23,21 @@ setInterval(function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //~~~~~~~~~~~~~~~~ HOUR ANIMATION ONLY ~~~~~~~~~~~~~~~~~~~
 // the element's id = "hour_anim"
 setInterval(showHour, 1000);
@@ -42,8 +46,6 @@ function showHour() {
   let hour = time.getHours();
 	clock = "🕑";
 
-
-  //~~~~~~~~~~~~~~~~ HOUR ANIMATION ONLY ~~~~~~~~~~~~~~~~~~~
   // if lessthan b and greater than a.
   //I realise the hour hand is the one moving. I don't think it matters. I might redo this by hours too.
   
@@ -90,12 +92,6 @@ function showHour() {
 
 	hour = hour < 10 ? "0" + hour : hour;
 
-	// let currentHour = hour + clock;
-
-	// document.getElementById("hour_anim")
-	// 		.innerHTML = currentHour;
-
-
  // ~~~~~~~~~ just the hour clock ~~~~~~~~~~
  //name the html div id="clock_anim"
   let curr_hour = clock;
@@ -109,3 +105,71 @@ function showHour() {
 showTime();
 
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+//~~~~~~~~~~~~~~~~ SUN & MOON ANIMATION ONLY ~~~~~~~~~~~~~~~~
+// the element's id = "sun_moon"
+// var f = ['🌑', '🌒', '🌓', '🌔', '🌕', '🌖', '🌗', '🌘'];
+
+setInterval(showTime, 1000);
+function showTime() {
+	let time = new Date();
+  let hour = time.getHours();
+	sunMoon = "🌞";
+
+  // if lessthan-or-equal-to b and greaterthan-or-equal-to a.
+  if (hour <= 4 && hour >= 2) {
+		sunMoon = "🌒";     //0 position
+	}
+  if (hour <= 7 && hour >= 5) {
+		sunMoon = "🌓";     //5 position
+	}
+  if (hour <= 10 && hour >= 8) {
+		sunMoon = "🌔";      //10
+	}
+  if (hour <= 13 && hour >= 11) {
+		sunMoon = "🌕";     //30
+	}
+  if (hour <= 16 && hour >= 14) {
+		sunMoon = "🌖";
+	}
+  if (hour <= 19 && hour >= 17) {
+		sunMoon = "🌗";
+	}
+  if (hour <= 22 && hour >= 20) {
+		sunMoon = "🌘";
+	}
+  if (hour == 23) {
+		sunMoon = "🌑";
+	}
+  if (hour == 1) {
+		sunMoon = "🌑";
+	}
+
+	if (hour == 0 || hour == 24) {
+		sunMoon = "🎆";
+	}
+
+	hour = hour < 10 ? "0" + hour : hour;
+
+	let currentTime = sunMoon;
+
+	document.getElementById("sun_moon")
+			.innerHTML = currentTime;
+
+
+}
+showTime();
+
+
