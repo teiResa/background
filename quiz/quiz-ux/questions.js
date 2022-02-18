@@ -105,7 +105,7 @@
       correctOption: "optionD"
   },
   {
-      question: "U's experience during using session of using the app/site.",
+      question: "U's experience during a session of using the app/site.",
       optionA: "User Journey",
       optionB: "Site Map",
       optionC: "Mind Mapping",
