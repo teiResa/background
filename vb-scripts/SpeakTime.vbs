@@ -1,5 +1,6 @@
 Dim speaks, speech 
 speaks=hour(time) 
+speaksMeridiem=hour(ampm)
 hour_now=hour(time)
 min_now=Minute(time)
 if hour_now > 12 or hour_now = 12 Then
@@ -51,12 +52,13 @@ sayOh = " "
 End If
 If min_now = 0 Then
 minfinal = "Hundred Hours"
-
 End If
 
 
 
 speaks = "It's " & hourfinal & " " & sayOh & " " & minfinal & " " & ampm
+' speaksMeridiem = ampm
 
 Set speech=CreateObject("sapi.spvoice") 
 speech.Speak speaks
+' speech.Speak speaksMeridiem
