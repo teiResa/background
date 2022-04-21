@@ -24,7 +24,7 @@ $colors: (
 
 // Variables for dots
 $size:     18px;
-$duration: 2.2s;  //was .666, .999. slowed more for testing
+$duration: 1.7s;  //was .666, .999. slowed more for testing
 $timing:   linear;
 
 @mixin dot {
@@ -46,6 +46,10 @@ body {
   height: 100%;
   overflow: hidden;
   background-color: color(body);
+}
+
+img {
+ max-width: 100%;
 }
 
 .loader {
@@ -72,11 +76,16 @@ body {
 $pos: 350%;
 $d1:  6;
 $d2:  1.75;
+// @keyframes flip {
+
+ 
+// }
 // t
 @keyframes jump--1 {
-  0%    { transform: translate3d(0, 0, 0) scale(2); }
-  17%   { transform: translate3d($pos/$d1, -$pos/$d2, 0); }
-  24%   { transform: translate3d($pos, -$pos, 0); }
+  0%    { transform: translate3d(0, 0, 0) scale(2);
+  }
+  17%   { transform: translate3d($pos/$d1, -$pos/$d2, 0);}
+  24%   { transform: translate3d($pos, -$pos, 0);}
   31%   { transform: translate3d($pos*2, $pos, 0); }
   38%   { transform: translate3d($pos*2, 0, 0); }
   100%  { transform: translate3d(0, 0, 0) scale(2); }

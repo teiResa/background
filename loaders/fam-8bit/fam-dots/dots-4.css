@@ -10,6 +10,10 @@ body {
   background-color: #00000030;
 }
 
+img {
+  max-width: 100%;
+}
+
 .loader {
   position: fixed;
   top: 0;
@@ -35,32 +39,32 @@ body {
 
 .dot:nth-child(1) {
   background-color: #cd96bb;
-  -webkit-animation: jump--1 2.2s linear infinite;
-          animation: jump--1 2.2s linear infinite;
+  -webkit-animation: jump--1 1.7s linear infinite;
+          animation: jump--1 1.7s linear infinite;
   -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 0 2px 2px, #cd96bb 0 0 12px 0;
           box-shadow: rgba(255, 255, 255, 0.6) 0 0 2px 2px, #cd96bb 0 0 12px 0;
 }
 
 .dot:nth-child(2) {
   background-color: #f9c1b5;
-  -webkit-animation: jump--2 2.2s linear infinite;
-          animation: jump--2 2.2s linear infinite;
+  -webkit-animation: jump--2 1.7s linear infinite;
+          animation: jump--2 1.7s linear infinite;
   -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 0 2px 2px, #f9c1b5 0 0 12px 0;
           box-shadow: rgba(255, 255, 255, 0.6) 0 0 2px 2px, #f9c1b5 0 0 12px 0;
 }
 
 .dot:nth-child(3) {
   background-color: #adcdce;
-  -webkit-animation: jump--3 2.2s linear infinite;
-          animation: jump--3 2.2s linear infinite;
+  -webkit-animation: jump--3 1.7s linear infinite;
+          animation: jump--3 1.7s linear infinite;
   -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 0 2px 2px, #adcdce 0 0 12px 0;
           box-shadow: rgba(255, 255, 255, 0.6) 0 0 2px 2px, #adcdce 0 0 12px 0;
 }
 
 .dot:nth-child(4) {
   background-color: #cdd3be;
-  -webkit-animation: jump--4 2.2s linear infinite;
-          animation: jump--4 2.2s linear infinite;
+  -webkit-animation: jump--4 1.7s linear infinite;
+          animation: jump--4 1.7s linear infinite;
   -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 0 2px 2px, #cdd3be 0 0 12px 0;
           box-shadow: rgba(255, 255, 255, 0.6) 0 0 2px 2px, #cdd3be 0 0 12px 0;
 }
