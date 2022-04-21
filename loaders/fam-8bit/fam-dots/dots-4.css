@@ -10,7 +10,7 @@ body {
   background-color: #00000030;
 }
 
-img {
+.loader-img {
   max-width: 100%;
 }
 
