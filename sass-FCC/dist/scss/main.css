@@ -1,0 +1,26 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: blue;
+  color: #fff;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  /* the & just means .main here. Interpolation is with .main which makes it .main .main-paragraph, rather than just .main-paragraph */
+}
+
+.main .main__paragraph {
+  font-weight: 700;
+}
+
+.main .main__paragraph:hover {
+  color: pink;
+}
+/*# sourceMappingURL=main.css.map */

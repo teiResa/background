@@ -1,0 +1,129 @@
+$colors: (
+  body:      #00000050,
+  dot--1:    #cd96bb,
+  dot--2:    #f9c1b5,
+  dot--3:    #adcdce,
+  dot--4:   #cdd3be,
+
+  // ,
+
+  // dot--1:    #f44336,
+  // dot--2:    #f1c40f,
+  // dot--3:    #03A9F4,
+
+  highlight: rgba(white, .6),
+  shadow:    rgba(black, .4)
+);
+
+// Function for color to replace map-get
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+}
+
+// Variables for dots
+$size:     18px;
+$duration: 2.2s;  //was .666, .999. slowed more for testing
+$timing:   linear;
+
+@mixin dot {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  width: $size;
+  height: $size;
+  border-radius: 100%; //makes shape
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: color(body);
+}
+
+.loader {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: -90px;
+  margin: auto;
+  transform: translate3d(0, 0, 0);
+}
+
+.dot {
+  @include dot;
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      background-color: color(dot--#{$i});
+      animation: jump--#{$i} $duration $timing infinite;
+      box-shadow: 
+        color(highlight) 0 0 2px 2px,
+        color(dot--#{$i}) 0 0 12px 0;
+    }
+  }
+}
+
+// Animations
+$pos: 350%;
+$d1:  6;
+$d2:  1.75;
+// t
+@keyframes jump--1 {
+  0%    { transform: translate3d(0, 0, 0) scale(2); }
+  17%   { transform: translate3d($pos/$d1, -$pos/$d2, 0); }
+  24%   { transform: translate3d($pos, -$pos, 0); }
+  31%   { transform: translate3d($pos*2, $pos, 0); }
+  38%   { transform: translate3d($pos*2, 0, 0); }
+  100%  { transform: translate3d(0, 0, 0) scale(2); }
+}
+// m
+@keyframes jump--2 {
+  0%    { transform: translate3d($pos, 0, 0); }
+  24%   { transform: translate3d(0, 0, 0) scale(2); }
+  31% { transform: translate3d($pos/$d1, -$pos/$d2, 0); }
+  38%   { transform: translate3d($pos, -$pos, 0); }
+  45% { transform: translate3d($pos*2, $pos, 0); }
+  52%   { transform: translate3d($pos*2, 0, 0); }
+  100%  { transform: translate3d($pos, 0, 0); }
+}
+// s
+@keyframes jump--3 {
+  0%    { transform: translate3d($pos*1.5, 0, 0); }
+  38%   { transform: translate3d(0, 0, 0) scale(2); }
+  45% { transform: translate3d($pos/$d1, -$pos/$d2, 0); }
+  52%   { transform: translate3d($pos, -$pos, 0); }
+  59% { transform: translate3d($pos*2, $pos, 0); } //diangular
+  66% { transform: translate3d($pos*2, 0, 0); }
+  100%  { transform: translate3d($pos*1.5, 0, 0); }
+}
+// d
+@keyframes jump--4 {
+ 0%    { transform: translate3d($pos*2, 0, 0); }
+ 52%   { transform: translate3d(0, 0, 0) scale(2); }
+ 59% { transform: translate3d($pos/$d1, -$pos/$d2, 0); }
+ 66%   { transform: translate3d($pos, -$pos, 0); }
+ 73% { transform: translate3d($pos*2, $pos, 0); } //diangular
+ 100%  { transform: translate3d($pos*2, 0, 0); }
+}
+
+// @keyframes jump--4 {
+//  0%    { transform: translate3d(0, 0, 0) scale(2); }
+//  38% { transform: translate3d($pos/$d1, -$pos/$d2, 0); }
+//  45%   { transform: translate3d($pos, -$pos, 0); }
+//  52% { transform: translate3d($pos*2, $pos, 0); }
+//  59%   { transform: translate3d($pos*2, 0, 0); }
+//  100%  { transform: translate3d(0, 0, 0) scale(2); }
+// }
+
+// 0%    { transform: translate3d($pos*2, 0, 0); }
+// 52%   { transform: translate3d(0, 0, 0) scale(2); }
+// 59% { transform: translate3d($pos/$d1, -$pos/$d2, 0); }
+// 66%   { transform: translate3d($pos, -$pos, 0); }
+// 73% { transform: translate3d($pos*2, $pos, 0); }
+// 80%   { transform: translate3d($pos*2, $pos, 0); }
+// 100%  { transform: translate3d($pos*2, 0, 0); }
