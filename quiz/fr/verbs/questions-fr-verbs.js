@@ -129,7 +129,7 @@ const questions = [
  correctOption: "optionA"
 },
 {
- question: "Tomber",
+ question: "Aller",
  optionA: "To fall (to fall down)",
  optionB: "To enter",
  optionC: "To go",
