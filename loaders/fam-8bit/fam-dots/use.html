@@ -1,0 +1,88 @@
+<head>
+ <title> Fam Loading Animation Info</title>
+ <link rel="icon" href="https://teiresa.github.io/background/assets/teiResaHead.ico">
+ 
+</head>
+
+<!-- 
+
+Just copy this stuff to the html page you want to use this loader.
+
+make sure to connect the stylesheet too :
+
+<link rel="stylesheet" href="https://teiresa.github.io/background/loaders/fam-8bit/fam-dots/dots-4.css">
+
+and this is the jQuery:
+
+
+   jQuery
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script>
+     $(window).load(function() {
+     $(".preloader").delay(5000).fadeOut("slow");
+     $("#overlayer").delay(5000).fadeOut("slow");
+     })
+  </script>
+
+ -->
+
+ <p> for use with <a href="https://teiresa.github.io/background/loaders/fam-8bit/fam-dots/fam-dots.html">this loader animation</a>.</p>
+
+ <style>
+  #overlayer {
+  width:100%;
+  height:100%;  
+  position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  z-index: 2;
+  background:#4a4a4a60;
+}
+  .preloader p{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -45px;
+    width: 120px;
+    height: 90px;
+    
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    z-index: 3;
+}
+
+.loader {
+ z-index: 3;
+}
+ </style>
+
+
+
+<div id="overlayer"></div>
+<div class="preloader">
+   <div class="loader">
+    <div class="loader-inner">
+
+
+     <div class="dot">
+      <img class="loader-img" src="https://teiresa.github.io/gallery/resources/fam/theresa.png" alt=" " id="tei" >
+     </div>
+     <div class="dot">
+      <img class="loader-img" src="https://teiresa.github.io/gallery/resources/fam/8bit-miaou.png" alt=" ">
+     </div>
+     <div class="dot">
+      <img class="loader-img" src="https://teiresa.github.io/gallery/resources/fam/seymour-eyes%20fixed.png" alt=" ">
+     </div>
+     <div class="dot">
+      <img class="loader-img" src="https://teiresa.github.io/gallery/resources/fam/david%20-%20L(2).png" alt=" " id="dav">
+     </div>
+    </div>
+      <!-- <span class="loader-inner"></span> -->
+   </div>
+   <p> Loading...</p>
+</div>
+
+
