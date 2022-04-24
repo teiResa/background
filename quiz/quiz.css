@@ -397,3 +397,24 @@ input[type=radio]:checked ~ .option {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+
+ /* In case of touch-screen device */
+    @media (pointer:coarse) {
+     input[type=radio]:checked ~ .option {
+      background: #8dbabb90;
+      color: #536d6e;
+     }
+
+     span label:hover{
+      -ms-transform: scale(1) !important;
+      -webkit-transform: scale(1) !important;
+      transform: scale(1) !important;
+      color: #8dbabb;
+    }
+
+    /* span label{
+     
+     transition: transform 0.3s;
+     
+   } */
+    }
