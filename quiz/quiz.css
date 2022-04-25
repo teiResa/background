@@ -235,7 +235,7 @@ input[type=radio]:checked ~ .option {
 }
 
 .pick-icon {
-  height: 40px;
+  height: 90px;  /* was 40px */
   position:relative;
   top: -15px;
   color: rgb(53, 52, 52);
@@ -246,6 +246,7 @@ input[type=radio]:checked ~ .option {
  .kitty {
   font-size: 5em;
   top: -85px;
+  /* height: 100%; */
 }
 
 .modal-button-container{
@@ -301,6 +302,10 @@ input[type=radio]:checked ~ .option {
       font-size: 0.8rem;
       width: 100%;
   }
+
+  .next-button-container{
+   width: 80%;
+ }
   .modal-content-container{
       width: 90%;
       height: 25rem;
@@ -342,6 +347,10 @@ input[type=radio]:checked ~ .option {
     width: 100%;
     padding-left: 7%;
   }
+
+  .next-button-container{
+   width: 80%;
+ }
 
   .modal-content-container{
       width: auto;
@@ -411,6 +420,10 @@ input[type=radio]:checked ~ .option {
       transform: scale(1) !important;
       color: #8dbabb;
     }
+
+    .next-button-container{
+     width: 80%;
+   }
 
     /* span label{
      
