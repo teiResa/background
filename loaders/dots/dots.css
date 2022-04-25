@@ -31,7 +31,6 @@ body {
   width: 18px;
   height: 18px;
   border-radius: 100%;
-  background-image: url("https://teiresa.github.io/gallery/resources/fam/8bit-tei.png");
 }
 
 .dot:nth-child(1) {
