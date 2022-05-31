@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA;oCACoC",
+    "mappings": "AAAA;oCACoC;AAsBpB,gBAAgB;AAYhB,gBAAgB",
     "sources": [
         "list.scss"
     ],
