@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+     <script src="../js/plants-2022.js"></script>
+       
+    </head>
+	
+    <body>
+      hello
+
+      <table>
+       <thead>
+        <tr>hi</tr>
+        <tr>hi</tr>
+       </thead>
+      
+      </table>
+     
+        <!-- <table>
+         <tr class="t-sections">
+          <td class="t-names">names</td>
+          <td class="t-care">care instructions</td>
+          <td class="t-notes">notes</td>
+         </tr>
+         <tr class="t-headers">
+          <td class="t-h-names">Name</td>
+          <td class="t-h-name">Latin Name</td>
+          <td class="t-h-name">Chinese Name</td>
+          <td class="t-h-name">Pinyin</td>
+          <td class="t-h-care">Type</td>
+          <td class="t-h-care">Moisture</td>
+          <td class="t-h-care">Sun</td>
+          <td class="t-h-care">pH</td>
+          <td class="t-h-notes"></td>
+          <td class="t-h-notes"></td>
+          <td class="t-h-notes"></td>
+
+         </tr>
+         <td><script> document.write("+garden.Weinmannifolia.name+");</script></td>
+         </tr>
+        </table> -->
+        
+    </body>
+    <script>            
+            
+
+
+     $(function() {
+      //data objects go here
+      var garden = [
+Weinmannifolia = {
+name: 'fragrant tree',
+latinName: 'Pistacia Weinmannifolia',
+pinyinName: 'Qing Xiang Mu',
+chinaName: '青香木',
+type: 'bonsai',  //herb, food, bonsai, etc.
+pH: null,
+sun: 'full, but not directly in HZ sun',
+water: '150 to 200ml 3-4X /week',
+feed: 'every few weeks',
+container: 'clay pot with drainage holes',
+petSafe: false,   //false by default
+foodSafe: true,   //used in TCM
+note: 'water when soil feels dry to touch'
+},
+Catnip = {
+name: 'Catnip',
+latinName: 'Nepeta Cataria',
+pinyinName: 'māo bò he',
+chinaName: '猫薄荷',
+type: 'herb / perennial',  //herb, food, bonsai, etc.
+pH: null,
+sun: 'full, but not directly in HZ sun',
+water: 'drought-tolerant',
+feed: 'every month or so',
+container: '12in diameter, clay with drainage hole',
+prune: 'prune off the flowers as they\'re starting to degrade and before they go to seed.  Pinch at 6-8in growth to encourage bushier growth. After first frost in the fall, cut back mature plants to just a few inches from the soil. They will regenerate in the spring with fresh growth. ',
+petSafe: true,   //false by default
+foodSafe: true,   //used in TCM
+note: 'water when soil feels dry to touch. Sedative and digestive tea.'
+},
+ScotchBonnet = {
+name: 'Scotch Bonnet',
+latinName: 'Capsicum Chinense',
+pinyinName: 'n/a',
+chinaName: 'n/a',
+type: 'pepper',  //herb, food, bonsai, etc.
+pH: null,
+sun: 'full, but not directly in HZ sun',
+water: '150 to 200ml 3-4X /week',
+feed: 'prefruit= Normal strength nitrogen-rich nutrients fertiliser every few weeks. Fruiting =  higher potassium and phosphorus. ',
+container: 'clay pot with drainage holes',
+petSafe: false,   //false by default
+foodSafe: true,   //used in TCM
+note: 'water when soil feels dry to touch'
+}
+];
+      //filtering code
+      $(function() {
+
+       function petSafe(plant) {
+        return plant.petSafe != true;
+
+       };
+
+       var results = [];
+       results = garden.filter(petSafe);
+
+      });
+
+      //Loop through the array and add the matching plants to the results table (JS & JQ textbook for reference, pg 535)
+      var $tableBody = $('<tbody></tbody>');
+      for( var i = 0; i < results.length; i++) {
+          var plant = results [i];
+          var $row = $('<tr></tr>');
+          $row.append($('<td></td>').text(plant.name));
+          $row.append($('<td></td>').text(plant.latinName));
+          $tableBody.append( $row );
+      
+      }
+
+      // Add the new content after the body of the page
+      $('thead').after($tableBody);
+
+
+     }); 
+ </script>
+</html>
