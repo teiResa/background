@@ -55,6 +55,7 @@ latinName: 'Pistacia Weinmannifolia',
 pinyinName: 'Qing Xiang Mu',
 chinaName: '青香木',
 type: 'bonsai',  //herb, food, bonsai, etc.
+year: 2022,
 pH: null,
 sun: 'full, but not directly in HZ sun',
 water: '150 to 200ml 3-4X /week',
@@ -70,6 +71,7 @@ latinName: 'Nepeta Cataria',
 pinyinName: 'māo bò he',
 chinaName: '猫薄荷',
 type: 'herb / perennial',  //herb, food, bonsai, etc.
+year: 2022,
 pH: null,
 sun: 'full, but not directly in HZ sun',
 water: 'drought-tolerant',
@@ -86,6 +88,7 @@ latinName: 'Capsicum Chinense',
 pinyinName: 'n/a',
 chinaName: 'n/a',
 type: 'pepper',  //herb, food, bonsai, etc.
+year: 2022,
 pH: null,
 sun: 'full, but not directly in HZ sun',
 water: '150 to 200ml 3-4X /week',
@@ -99,13 +102,13 @@ note: 'water when soil feels dry to touch'
       //filtering code
       $(function() {
 
-       function petSafe(plant) {
-        return plant.petSafe != true;
+       function generation(plant) {
+        return (plant.year >= 2020) && (plant.year <= 2052);
 
        };
 
        var results = [];
-       results = garden.filter(petSafe);
+       results = garden.filter(generation);
 
       });
 
