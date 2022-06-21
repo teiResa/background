@@ -44,12 +44,18 @@
     </body>
     <script>            
             
-
+      
+      /*
+      // ~~~~~~~~~~~ STORE EACH PLANT AS AN OBJECT IN AN ARRAY (pg. 533) ~~~~~~~~~~~~
+      *
+      * var arrayName = [ {object:value, object:value}, {object:value, object:value}];
+      * ~~each person is an object; it holds name and rate.
+      */
 
      $(function() {
       //data objects go here
       var garden = [
-Weinmannifolia = {
+{
 name: 'fragrant tree',
 latinName: 'Pistacia Weinmannifolia',
 pinyinName: 'Qing Xiang Mu',
@@ -65,7 +71,7 @@ petSafe: false,   //false by default
 foodSafe: true,   //used in TCM
 note: 'water when soil feels dry to touch'
 },
-Catnip = {
+{
 name: 'Catnip',
 latinName: 'Nepeta Cataria',
 pinyinName: 'māo bò he',
@@ -82,7 +88,7 @@ petSafe: true,   //false by default
 foodSafe: true,   //used in TCM
 note: 'water when soil feels dry to touch. Sedative and digestive tea.'
 },
-ScotchBonnet = {
+{
 name: 'Scotch Bonnet',
 latinName: 'Capsicum Chinense',
 pinyinName: 'n/a',
@@ -99,18 +105,31 @@ foodSafe: true,   //used in TCM
 note: 'water when soil feels dry to touch'
 }
 ];
-      //filtering code
-      $(function() {
+      // filtering code
+      // $(function() {
+       
 
-       function generation(plant) {
-        return (plant.year >= 2020) && (plant.year <= 2052);
+      //  function generation(plant) {
+      //   return (plant.year >= 2020) && (plant.year <= 2052);
 
-       };
+      //  };
 
-       var results = [];
-       results = garden.filter(generation);
+      //  var results = [];
+      //  results = garden.filter(generation);
 
-      });
+      // });
+
+         // THE FUNCTION ACTS AS A FILTER
+  function generation(plant) {                        // Declare priceRange()
+    return (plant.year >= 2001) && (plant.year <= 2025); // In range returns true
+  };
+
+  // FILTER THE PEOPLE ARRAY & ADD MATCHES TO THE RESULTS ARRAY
+  var results = [];                              // Array for matching people
+  results = people.filter(priceRange);           // filter() calls priceRange()
+
+
+
 
       //Loop through the array and add the matching plants to the results table (JS & JQ textbook for reference, pg 535)
       var $tableBody = $('<tbody></tbody>');
