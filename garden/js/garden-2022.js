@@ -46,3 +46,5 @@ ScotchBonnet = {
  note: 'water when soil feels dry to touch'
 }
 ];
+
+document.write('<p>' + garden + '</p>');
