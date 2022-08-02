@@ -3,4 +3,9 @@
   -webkit-box-shadow: 0px 0px 10px purple;
           box-shadow: 0px 0px 10px purple;
 }
+
+.option #red:hover {
+  background-color: red;
+  color: white;
+}
 /*# sourceMappingURL=rgb-basic.css.map */

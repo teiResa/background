@@ -9,3 +9,17 @@ $rgb-set-color: purple;
    box-shadow: 0px 0px 10px $rgb-set-color;
    // padding: 1px;
   }
+
+  .option{
+   
+   #red{
+    &:hover{
+     background-color: red;
+    color: white;
+   }
+    
+   }
+  }
+
+
+  // style="background-color: #ff44CC;"
