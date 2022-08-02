@@ -1,0 +1,11 @@
+$rgb-set-color: purple;
+// $rgb-set-strip: lighten($rgb-set-color, 40%);
+
+
+
+.rgb-effect{
+   border: 1rem green; 
+   
+   box-shadow: 0px 0px 10px $rgb-set-color;
+   // padding: 1px;
+  }

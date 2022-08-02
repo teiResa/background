@@ -1,0 +1,6 @@
+.rgb-effect {
+  border: 1rem green;
+  -webkit-box-shadow: 0px 0px 10px purple;
+          box-shadow: 0px 0px 10px purple;
+}
+/*# sourceMappingURL=rgb-basic.css.map */

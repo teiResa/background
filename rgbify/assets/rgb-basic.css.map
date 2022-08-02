@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,WAAW,CAAA;EACR,MAAM,EAAE,UAAU;EAElB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CARX,MAAM;CAUnB",
+    "sources": [
+        "rgb-basic.scss"
+    ],
+    "names": [],
+    "file": "rgb-basic.css"
+}
