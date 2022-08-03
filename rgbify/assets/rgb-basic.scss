@@ -1,22 +1,27 @@
 $rgb-set-color: purple;
 // $rgb-set-strip: lighten($rgb-set-color, 40%);
 
-
+// *{
+//  display: flex;
+//  align-content: center;
+// }
 
 .rgb-effect{
-   border: 1rem green; 
+   // border: 10rem green; 
    
-   box-shadow: 0px 0px 10px $rgb-set-color;
+   box-shadow: 0px 0px 20px $rgb-set-color; 
+   // $rgb-set-color
    // padding: 1px;
   }
 
-  .option{
-   
+  select option:hover{
+   color: white;
+
    #red{
-    &:hover{
-     background-color: red;
-    color: white;
-   }
+    // :hover{
+     background: red;
+    
+   // }
     
    }
   }

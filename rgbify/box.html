@@ -12,13 +12,16 @@
 
 
 
+<h1>Colour changing LED whiteboard</h1>
+<p> This is a work-in-progress. <br>
+Eventually, this will automatically be able to match the colour setting of the whiteboard in my office.
+</p>
 
 
-
-
+<!-- onclick="rgbLed" -->
 
  <div>
-  <div class="rgb-effect" onclick="rgbLed">
+  <div class="rgb-effect" style="height: 150px; width: 280px;">
    <p>i'm the box</p>
   </div>
  </div>
@@ -33,8 +36,11 @@
    <option value="blue" id="blue">blue</option>
   </select>
  </div>
-
- <button name="changer" onclick="colorChange()" style="background-color: yellow;"> Change colour</button>
+<br>
+<p>This button will be to force the scan to run.<br>
+It does more, but you only get to see a pop-up alert. Select "No Selection" then click the button.
+</p> <br>
+ <button name="changer" class=".changer" style="background-color: lightskyblue;"> Change colour</button>
  
 
 

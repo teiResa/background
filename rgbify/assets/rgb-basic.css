@@ -1,11 +1,13 @@
 .rgb-effect {
-  border: 1rem green;
-  -webkit-box-shadow: 0px 0px 10px purple;
-          box-shadow: 0px 0px 10px purple;
+  -webkit-box-shadow: 0px 0px 20px purple;
+          box-shadow: 0px 0px 20px purple;
 }
 
-.option #red:hover {
-  background-color: red;
+select option:hover {
   color: white;
+}
+
+select option:hover #red {
+  background: red;
 }
 /*# sourceMappingURL=rgb-basic.css.map */
