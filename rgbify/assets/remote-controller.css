@@ -1,0 +1,25 @@
+.remoteChassis {
+  border: 2px black solid;
+  background-color: grey;
+  width: 38%;
+  min-width: 15em;
+}
+
+.remoteChassis::before, .remoteChassis::after {
+  border: 2px grey solid;
+  content: "";
+  height: 2em;
+}
+
+.remoteChassis button {
+  border: 0px;
+  margin: 1px;
+  min-width: 4em;
+  min-height: 4em;
+}
+
+.remoteChassis .btn-circle {
+  border-radius: 80%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=remote-controller.css.map */
