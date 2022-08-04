@@ -2,12 +2,4 @@
   -webkit-box-shadow: 0px 0px 20px purple;
           box-shadow: 0px 0px 20px purple;
 }
-
-select option:hover {
-  color: white;
-}
-
-select option:hover #red {
-  background: red;
-}
 /*# sourceMappingURL=rgb-basic.css.map */

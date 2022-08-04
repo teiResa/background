@@ -1,7 +1,31 @@
 // when button on remote clicked, light up a example div the button's colour.
 // After that, have the buttons change the colour of the "glow around the whiteboard" (leds variable)
 
+//first row
+//storing current setting/brightness
+// var currBright;
+// var currColor1 = document.getElementById('tempLight').style.boxShadow;
+    
+     
+    
 
+document.getElementById('btn-off').onclick = function() {
+ document.getElementById('tempLight').style.backgroundColor = 'off';
+ //have remember current setting before turning white
+ // document.getElementById('temp-note').textContent.replace(../box.html, "I am off");
+ // write('<p>' + 'currColor1 = ' + currColor1 + '</p>');
+ leds.style.boxShadow = "0px 0px 20px white";
+}
+document.getElementById('btn-on').onclick = function() {
+ document.getElementById('tempLight').style.backgroundColor = 'on';
+//have remember the setting before off
+ 
+ leds.style.boxShadow = "0px 0px 20px grey";
+}
+
+
+
+//second row
 document.getElementById('btn-red').onclick = function() {
  document.getElementById('tempLight').style.backgroundColor = 'red';
  leds.style.boxShadow = "0px 0px 20px red";

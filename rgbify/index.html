@@ -7,6 +7,16 @@
  <title>RGBify</title>
 
  <link rel="icon" href="../assets/teiResaHead.ico">
+
+ <!-- stylesheets
+ 1) the layout
+ 2) the project's main (whiteboard, dropdown, button)
+ 3) the project's remote control
+ -->
+ <link rel="stylesheet" href="https://teiresa.github.io/background/standards/layouts/qprojects/assets/quickies.css">
+ <link rel="stylesheet" href="assets/rgb-basic.css">
+ <!-- the css for only the remote -->
+ <link rel="stylesheet" href="assets/remote-controller.css">
 </head>
 <body>
  <style>
@@ -14,12 +24,140 @@
    background-color: lightpink;
   }
  </style>
- <h1>RGBify yo life!</h1>
- <a href="box.html"> click to see the whiteboard with the basic effect.</a>
 
- <div class="footer" style="margin-top:280px;">
-  by Theresa Balsdon <br>
-  <a href="https://github.com/teiResa/">TeiResa on Github</a>
+
+
+ 
+<div class="row owner-card">
+ <p> A project by <a href="https://github.com/teiResa">@TeiResa</a></p>
+</div>
+
+ <!-- //top banner -->
+ <div class="row title-card">   
+  <div>
+   <h1>RGB yo life!</h1>
+  </div>
+  <div class="row title-pitch">
+   <p>Digitalisation of my whiteboard.</p>
+  </div>
+
+
+<!-- //part A: example -->
+<div class="row prj-display">
+ <div class="col abc"> <!-- applet-->
+  <div>
+the whiteboard
+
+<div class="rgb-effect" style="height: 150px; width: 280px;">
+ <p>i'm the box</p>
+</div>
+
+  </div>
  </div>
+ <div class="col abc">
+  <div> <!--modifiers-->
+<!-- the dropdown & the force scan button -->
+the switchboard
+<div class="form-dropdown">
+ <p>Pick a colour:</p>
+ <select class="form-component" name="color-list" id="colors-dropdown">
+  <option value="default" id="default"> No Selection</option>
+  <option value="red" id="red">red</option>
+  <option value="green" id="green">green</option>
+  <option value="blue" id="blue">blue</option>
+ </select>
+</div>
+
+<p>This button will be to force the scan to run.<br>
+ It does more, but you only get to see a pop-up alert. Select "No Selection" then click the button.</p>
+
+<button name="changer" class=".changer" style="background-color: lightskyblue;"> Change colour</button>
+
+
+  </div>
+ </div>
+</div>
+
+<!-- //part B:  -->
+<div class="row prj-info">
+ <div class="col def">
+  <!-- left -->
+  <div class="row desc-left">
+   
+   <div id="tempLight" style="width: 30px; height: 30px;  background-color: bisque;"><p id="temp-note">tempLight</p></div>
+
+  </div>
+  <div class="row desc-left">
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis commodi provident quae saepe voluptates sunt molestiae asperiores nostrum sequi officiis, enim quasi voluptatibus placeat quam architecto veritatis tempora esse soluta?</p>
+  </div>
+ </div>
+ <div class="col def">
+  <!-- right -->
+  <div>
+   
+   <div class="remoteChassis">
+    <div>
+     <div class="t-b-spacer"></div>
+     <div class="remote-controller" id="remote-controller">
+      <div class="row" id="one">
+       <button class="btn-circle" id="btn-up" style="background-color: white;"><i class="fa-solid fa-brightness"></i> up</button>
+       <button class="btn-circle" id="btn-down" style="background-color: white;"><i class="fa-solid fa-brightness-low"></i>down</button>
+       <button class="btn-circle" style="background-color: black; color:white;"  id="btn-off"> off </button>
+       <button class="btn-circle" style="background-color: red; color: white;"  id="btn-on"> on </button>
+      </div>
+      <div class="row" id="two">
+       <button class="btn-circle btn-color" id="btn-red" style="background-color: red;">R</button>
+       <button class="btn-circle btn-color" id="btn-green" style="background-color: green;">G</button>
+       <button class="btn-circle btn-color" id="btn-blue" style="background-color: blue;">B</button>
+       <button class="btn-circle btn-color" id="btn-white" style="background-color: white;">W</button>
+      </div>
+      <div class="row muted" id="three">
+       <button></button>
+       <button></button>
+       <button></button>
+       <button></button>
+      </div>
+      <div class="row muted" id="four">
+       <button></button>
+       <button></button>
+       <button></button>
+       <button></button>
+      </div>
+      <div class="row muted" id="five">
+       <button></button>
+       <button></button>
+       <button></button>
+       <button></button>
+      </div>
+      <div class="row" id="six">
+       <button class="btn-circle btn-color" id="btn-yellow" style="background-color: yellow;">Y</button>
+       <button class="btn-circle btn-color" id="btn-cyan" style="background-color: cyan;">C</button>
+       <button class="btn-circle btn-color" id="btn-magenta" style="background-color: magenta;">M</button>
+       <button class="btn-circle btn-color"><small>smooth</small></button>
+      </div>
+   
+     </div>
+     <div></div>
+    </div>
+   </div> 
+
+
+  </div>
+ </div>
+</div>
+
+  </div>
+
+
+
+  <!-- The Scripts
+  1) The project's main
+  2) The remote control's scripts
+  3) Font Awesome
+  -->
+  <script src="assets/rgb-basic.js"></script>
+  <script src="assets/remote-controller.js"></script>
+  <!-- fontawesome kit-->
+  <script src="https://kit.fontawesome.com/b9730a3ea0.js" crossorigin="anonymous"></script>
 </body>
 </html>
