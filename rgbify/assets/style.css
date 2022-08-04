@@ -1,0 +1,74 @@
+* {
+  background-color: aliceblue;
+}
+
+.abc, .def {
+  border: 0px red solid;
+}
+
+.disp-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.disp-right .items-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rgb-effect {
+  background-color: white;
+}
+
+.rgb-effect p {
+  background-color: white;
+}
+
+.prj-info {
+  margin-top: 5vh;
+}
+
+.prj-info .desc-left {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.prj-info .desc-left .tempLight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.prj-info .desc-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.remoteChassis {
+  min-width: 18vw;
+  max-width: 19vw !important;
+}
+
+@media (max-width: 700px) {
+  .remoteChassis {
+    margin-left: 2vw;
+    max-width: 37vw !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

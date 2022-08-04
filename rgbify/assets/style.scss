@@ -1,0 +1,64 @@
+*{
+ background-color: aliceblue;
+ // font-family: gaegu;
+}
+
+.abc, .def {
+ border: 0px red solid;
+}
+
+.disp-left {
+ display: flex;
+ justify-content: center;
+}
+
+.disp-right {
+
+ .items-r{
+  display: flex;
+  // justify-content: flex-end;
+  justify-content: center;
+  // margin-left: 10vw;
+ }
+}
+
+.rgb-effect {
+ background-color: white;
+ p{
+  background-color: white;
+ }
+}
+
+.prj-info {
+
+ margin-top: 5vh;
+ 
+ 
+ .desc-left {
+  justify-content: center;
+
+  .tempLight{
+   display: flex;
+   // justify-content: center;
+   justify-content: center;
+
+  }
+ }
+ .desc-right {
+  display: flex;
+  justify-content: center;
+ }
+}
+
+.remoteChassis {
+ min-width: 18vw;
+ max-width: 19vw !important;
+
+}
+
+@media (max-width: 700px) {
+ .remoteChassis {
+  margin-left: 2vw;
+  max-width: 37vw !important;
+ }
+}

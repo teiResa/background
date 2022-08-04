@@ -7,25 +7,22 @@
  <title>RGBify</title>
 
  <link rel="icon" href="../assets/teiResaHead.ico">
+ <link href="https://fonts.googleapis.com/css2?family=Cute+Font&amp;family=Gaegu:wght@300;400&amp;family=Stylish&amp;display=swap" rel="stylesheet">
 
  <!-- stylesheets
  1) the layout
  2) the project's main (whiteboard, dropdown, button)
  3) the project's remote control
+ 4) this page's private stylesheet
  -->
  <link rel="stylesheet" href="https://teiresa.github.io/background/standards/layouts/qprojects/assets/quickies.css">
  <link rel="stylesheet" href="assets/rgb-basic.css">
  <!-- the css for only the remote -->
  <link rel="stylesheet" href="assets/remote-controller.css">
+ <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
- <style>
-  *{
-   background-color: lightpink;
-  }
- </style>
-
-
+ 
 
  
 <div class="row owner-card">
@@ -44,23 +41,24 @@
 
 <!-- //part A: example -->
 <div class="row prj-display">
- <div class="col abc"> <!-- applet-->
+ <div class="col abc disp-left"> <!-- applet-->
   <div>
-the whiteboard
-
+<!-- the whiteboard -->
+<br>
 <div class="rgb-effect" style="height: 150px; width: 280px;">
  <p>i'm the box</p>
 </div>
 
   </div>
  </div>
- <div class="col abc">
+ <div class="col abc disp-right">
   <div> <!--modifiers-->
 <!-- the dropdown & the force scan button -->
-the switchboard
-<div class="form-dropdown">
- <p>Pick a colour:</p>
- <select class="form-component" name="color-list" id="colors-dropdown">
+<!-- the switchboard -->
+<p>Pick a colour:</p>
+<div class="form-dropdown items-r">
+ 
+ <select class="form-component items-r" name="color-list" id="colors-dropdown">
   <option value="default" id="default"> No Selection</option>
   <option value="red" id="red">red</option>
   <option value="green" id="green">green</option>
@@ -70,8 +68,10 @@ the switchboard
 
 <p>This button will be to force the scan to run.<br>
  It does more, but you only get to see a pop-up alert. Select "No Selection" then click the button.</p>
+<div class=" items-r">
+ <button name="changer" title="change button" class="changer" style="background-color: lightskyblue;"> Change colour</button>
+</div>
 
-<button name="changer" class=".changer" style="background-color: lightskyblue;"> Change colour</button>
 
 
   </div>
@@ -84,7 +84,7 @@ the switchboard
   <!-- left -->
   <div class="row desc-left">
    
-   <div id="tempLight" style="width: 30px; height: 30px;  background-color: bisque;"><p id="temp-note">tempLight</p></div>
+   <div id="tempLight" class="tempLight" style="width: 30px; height: 30px;  background-color: bisque;"><p id="temp-note">tempLight</p></div>
 
   </div>
   <div class="row desc-left">
@@ -93,7 +93,7 @@ the switchboard
  </div>
  <div class="col def">
   <!-- right -->
-  <div>
+  <div class="desc-right">
    
    <div class="remoteChassis">
     <div>
