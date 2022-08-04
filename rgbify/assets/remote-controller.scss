@@ -1,8 +1,9 @@
 .remoteChassis {
  border: 2px black solid;
  background-color: grey;
- width: 38%;
- min-width:15em;
+ // width: 255px;
+ min-width:15vw;
+ max-width: 20vw;
 
  &::before, &::after{
   border: 2px grey solid;
@@ -24,3 +25,11 @@
   }
 }
 
+// @media(min-width : 300px) and (max-width : 350px) {
+//  .remoteChassis {
+//   background-color: pink;
+//   width: 500vw;
+//   // min-width:15vw;
+//   max-width: 80vw;
+// }
+// }

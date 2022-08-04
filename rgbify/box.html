@@ -38,30 +38,30 @@ Eventually, this will automatically be able to match the colour setting of the w
   </select>
  </div>
 <br>
-<img src="https://teiresa.github.io/background/rgbify/assets/img/rgb-cmy.png" alt="image of colours to select from." style="width: 20%;">
+<!-- <img src="https://teiresa.github.io/background/rgbify/assets/img/rgb-cmy.png" alt="image of colours to select from." style="width: 20%;"> -->
 <p>This button will be to force the scan to run.<br>
-It does more, but you only get to see a pop-up alert. Select "No Selection" then click the button.
-</p> <br>
- <button name="changer" class=".changer" style="background-color: lightskyblue;"> Change colour</button>
+It does more, but you only get to see a pop-up alert. Select "No Selection" then click the button. <button name="changer" class=".changer" style="background-color: lightskyblue;"> Change colour</button>
+</p> 
+
  <br>
 
-
+<div id="tempLight" style="width: 30px; height: 30px;  background-color: bisque;">tempLight</div>
 
 <div class="remoteChassis">
  <div>
   <div class="t-b-spacer"></div>
-  <div class="remoteController">
+  <div class="remote-controller" id="remote-controller">
    <div class="row" id="one">
     <button class="btn-circle" style="background-color: white;"><i class="fa-solid fa-brightness"></i> up</button>
     <button class="btn-circle" style="background-color: white;"><i class="fa-solid fa-brightness-low"></i>down</button>
-    <button class="btn-circle" style="background-color: black; color:white;"> off </button>
-    <button class="btn-circle" style="background-color: red; color: white;"> on </button>
+    <button class="btn-circle" style="background-color: black; color:white;"  id="btn-off"> off </button>
+    <button class="btn-circle" style="background-color: red; color: white;"  id="btn-on"> on </button>
    </div>
    <div class="row" id="two">
-    <button class="btn-circle btn-color" id="red" style="background-color: red;">R</button>
-    <button class="btn-circle btn-color" id="green" style="background-color: green;">G</button>
-    <button class="btn-circle btn-color" id="blue" style="background-color: blue;">B</button>
-    <button class="btn-circle btn-color" id="white" style="background-color: white;">W</button>
+    <button class="btn-circle btn-color" id="btn-red" style="background-color: red;">R</button>
+    <button class="btn-circle btn-color" id="btn-green" style="background-color: green;">G</button>
+    <button class="btn-circle btn-color" id="btn-blue" style="background-color: blue;">B</button>
+    <button class="btn-circle btn-color" id="btn-white" style="background-color: white;">W</button>
    </div>
    <div class="row muted" id="three">
     <button></button>
@@ -82,9 +82,9 @@ It does more, but you only get to see a pop-up alert. Select "No Selection" then
     <button></button>
    </div>
    <div class="row" id="six">
-    <button class="btn-circle btn-color" id="yellow" style="background-color: yellow;">Y</button>
-    <button class="btn-circle btn-color" id="cyan" style="background-color: cyan;">C</button>
-    <button class="btn-circle btn-color" id="magenta" style="background-color: magenta;">M</button>
+    <button class="btn-circle btn-color" id="btn-yellow" style="background-color: yellow;">Y</button>
+    <button class="btn-circle btn-color" id="btn-cyan" style="background-color: cyan;">C</button>
+    <button class="btn-circle btn-color" id="btn-magenta" style="background-color: magenta;">M</button>
     <button class="btn-circle btn-color"><small>smooth</small></button>
    </div>
 

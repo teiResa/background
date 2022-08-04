@@ -101,8 +101,8 @@ selectedColor.addEventListener("change", colorRef);
 
 btn.addEventListener("click", colorRef);
 
-
-document.write('<p>' + selectedColor.value + '</p>');
+// works...
+// document.write('<p>' + selectedColor.value + '</p>');
 // document.write('<p>' + selectedColor.value + '</p>');
 
 
