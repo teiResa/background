@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+.abc {
+  height: 100px;
+  margin-right: 2px;
+}
+
+.sidebar {
+  height: 100vh;
+  width: 34vw;
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 66;
+  overflow-y: hidden;
+  background-color: rgba(186, 85, 211, 0.315);
+  padding: 0px 90px 0px 10px;
+}
+
+.sidebar .header, .sidebar .content, .sidebar .footer {
+  height: 100px;
+  width: 30vw;
+  margin-right: 95px;
+  margin-left: 20px;
+}
+
+.sidebar .header {
+  height: 25vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar .header h1 {
+  margin: 9px 3px;
+}
+
+.sidebar .header p {
+  margin: 1px;
+}
+
+.sidebar .content {
+  height: 67vh;
+  background-color: rgba(213, 180, 220, 0.195);
+}
+
+.sidebar .footer {
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: gaegu;
+  font-weight: 600;
+}
+
+.sidebar .footer i {
+  margin: 0 12px;
+}
+
+.sidebar .footer a {
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.gallery {
+  width: 62%;
+  margin-left: 35%;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+  height: 100%;
+  padding: 10px 5px 10px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 255, 255, 0.183);
+}
+/*# sourceMappingURL=static-gal.css.map */

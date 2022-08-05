@@ -1,0 +1,110 @@
+// connected. works.
+
+$sidebar: rgba(186, 85, 211, 0.315);
+$sidebar-darker:rgba(213, 180, 220, 0.195);
+$gallery: rgba(0, 255, 255, 0.183) ;
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+.abc {
+ // border: 2px red solid;
+ height: 100px;
+ margin-right: 2px;
+}
+
+// body {
+//  display: -ms-grid;
+//   display: grid;
+//   -ms-grid-columns: 2fr 1fr;
+//       grid-template-columns: 2fr 1fr;
+// }
+
+.main {
+  // border: 2px solid  yellow;
+  
+
+}
+
+.sidebar {
+ height: 100vh;
+ width: 34vw;
+ position: fixed;
+ overflow-x: hidden;
+ 
+ 
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 66;
+  overflow-y: hidden;
+  background-color: $sidebar;
+  padding: 0px 90px 0px 10px;
+
+ .header, .content, .footer{
+  // border: 2px green solid;
+  height: 100px;
+  width: 30vw;
+  margin-right: 95px;
+  margin-left: 20px;
+ }
+
+ .header {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  h1 {
+   margin: 9px 3px ;
+  }
+
+  p {
+   margin: 1px; 
+  }
+
+ }
+ .content {
+  height: 67vh;
+  background-color: $sidebar-darker;
+
+ }
+
+ .footer {
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: gaegu;
+  font-weight: 600;
+
+  i{
+   margin: 0 12px ;
+  }
+
+  a{
+   text-decoration: none;
+   margin-left: 4px;
+  }
+ }
+}
+
+.gallery {
+ width: 62%;
+ margin-left: 35%;
+ margin-top: 8vh;
+ margin-bottom: 8vh;
+ height: 100%;
+ padding: 10px 5px 10px 20px;
+
+ // font-family: "Courier New", Courier, monospace;
+ // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-color: $gallery ;
+}
