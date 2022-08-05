@@ -16,7 +16,7 @@
   transition: all 0.3s ease-in-out;
   z-index: 66;
   overflow-y: hidden;
-  background-color: rgba(186, 85, 211, 0.315);
+  background-color: rgba(186, 85, 211, 0.185);
   padding: 0px 90px 0px 10px;
 }
 
@@ -92,6 +92,7 @@
   height: 100%;
   padding: 10px 5px 10px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgba(0, 255, 255, 0.183);
+  background-color: rgba(0, 255, 255, 0.253);
+  border-radius: 10px;
 }
 /*# sourceMappingURL=static-gal.css.map */
