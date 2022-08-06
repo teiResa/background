@@ -35,8 +35,10 @@ $colors: (
    width: 120px;
    height: 90px;
    
+
+   // hid the "Loading..." message by making transparent. I liked it there, but it scrolls with the page.
    text-align: center;
-   color: #fff;
+   color: rgba(255, 255, 255, 0);
    font-size: 28px;
    z-index: 99999;
 }
