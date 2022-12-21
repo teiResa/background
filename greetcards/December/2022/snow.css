@@ -3,6 +3,22 @@ body {
  background-color: darkseagreen;
 }
 
+body::before {
+  
+ /*Everything in here was to get the background to fade without effecting anything else.*/
+ content: "";
+ background: url(https://teiresa.github.io/background/greetcards/December/assets/4594038.jpg); 
+ background-size: 300px;
+ background-repeat: repeat;
+ opacity: .8;
+ position:absolute;
+ top:0;
+ bottom:0;
+ right:0;
+ left:0;
+ z-index:-5;
+}
+
 
 .content-container {
  margin: 5vh 5vw;
@@ -13,6 +29,10 @@ body {
  display: flex;
  align-items: center;
  justify-content: center;
+}
+
+.family-portrait {
+ transform: scale(0.55);
 }
 
 h1 {
