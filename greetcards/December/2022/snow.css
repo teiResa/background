@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Mountains+of+Christmas&family=Petit+Formal+Script&display=swap');
+/*
+'Petit Formal Script', 'Cedarville Cursive', 'Mountains of Christmas'
+*/
+
 
 body {
  background-color: #a7cee3;
+ min-width: 200px;
 }
 
 body::before {
@@ -19,6 +25,56 @@ body::before {
  z-index:-5;
 }
 
+.tiny-screens-only {
+ visibility: collapse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  just the snow is below */
+
+.modal-backdrop.show {
+ opacity: .01; 
+ /* LASTTOUCHES make more visible before sending out card */
+}
+.modal-backdrop {
+ background-color: #000;
+ height: 100vh;
+ left: 0;
+ position: fixed;
+ top: 0;
+ width: 100vw;
+ z-index: 1050;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .content-container {
  margin: 5vh 5vw;
@@ -33,20 +89,81 @@ body::before {
 
  
  display: grid;
- grid-template-rows: 15% 70% 15%;
+ grid-template-rows: 15% 68% 15%;
 }
 
 .content-row {
  width: 100%;
 }
 
+.top {
+ overflow-x: hidden;
+ width: 100%;
+}
+
+.middle {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+
+
+
 .family-portrait {
  transform: scale(0.55);
 }
 
+.greeting {
+ margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 h1 {
- color: green;
+ font-family: 'Petit Formal Script', cursive;
+ color: #a7cee3;
+ /* LASTTOUCHES #a7cee3 (skyblue) or goldenrod ??? */
  font-size: 1em;
+ margin: 1%;
 }
 
 .banner {
@@ -62,6 +179,7 @@ h1 {
 .banner:before, .banner:after {
  content: "";
  flex: 1 1;
+ width: 6vw;
  border-bottom: 10px double #a7cee3;
  opacity: .4;
  margin: auto;
@@ -69,24 +187,298 @@ h1 {
 
 #banner-spacer{
  content: "";
- width: 6%;
+ width: 25%;
  border-bottom: 10px double #a7cee3;
  opacity: .4;
 }
 
-
-
-
-.modal-backdrop.show {
- opacity: .01; 
- /* LASTTOUCHES make more visible before sending out card */
+#banner-spacer:first-of-type, #banner-spacer:last-of-type {
+ width: 30%;
 }
-.modal-backdrop {
- background-color: #000;
- height: 100vh;
- left: 0;
- position: fixed;
- top: 0;
- width: 100vw;
- z-index: 1050;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) and (min-width: 400px) {
+
+ 
+ .content-container {
+  
+  margin: 5vh auto;
+  background-color: rgba(255, 255, 255, 0.381);   /* LASTTOUCHES */
+  display: grid;
+  grid-template-rows: 10% 79% 10%;
+ }
+
+ .top {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+ }
+
+ .banner {
+  height: 2rem;
+ }
+
+ #banner-spacer{
+  width: 100%;
+  min-width: 15px;
+ }
+
+ .banner:before, .banner:after {
+  width: auto;
+  min-width: 10vw ;
+  margin: 0;
+ }
+ 
+ h1 {
+  font-family: 'Petit Formal Script', cursive;
+  color: rgb(97, 150, 170);
+  /* LASTTOUCHES #a7cee3 (skyblue) or goldenrod ??? */
+  font-size: .05em;
+  margin: 1%;
+ }
+ 
+  .middle {
+   margin-top: 1px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: nowrap;
+   max-width: 700px;
+   min-width: 100%;
+   max-height: 200px;
+   min-height: 95%;
+   overflow-y: hidden;
+   overflow-x: hidden;
+  }
+ 
+  .family-portrait {
+   transform: scale(0.45);
+   margin: 1px 3px;
+   top: 0;
+  }
+  
+  .greeting {
+   position: relative;
+   top: -150px;
+   margin: 0 2rem;
+   color: goldenrod;
+   font-family: 'Cedarville Cursive', cursive;
+   font-weight: bold;
+   font-size: .90em;
+  }
+
+  .bottom {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+  }
+  
+ }
+ 
+
+
+
+
+
+ 
+
+
+
+
+@media (max-width: 400px) and (min-width: 200px) {
+
+ body {
+  margin: 0;
+  overflow-y: scroll;
+  height: fit-content;
+  background: url(https://teiresa.github.io/background/greetcards/December/assets/4594038.jpg); 
+  background-size: 2000px;
+  background-repeat: repeat;
+  }
+
+ body::before {
+
+  visibility: hidden;
+  
+  /*Everything in here was to get the background to fade without effecting anything else.*/
+  background-size: 1600px;
+  background-repeat: repeat;
+ }
+
+
+ .non-tiny-screens {
+  visibility: collapse;
+ }
+/* 
+ .tiny-screens-only {
+  visibility: visible;
+  flex-direction: column;
+ } */
+ 
+ .content-container {
+  margin: 5%;
+  background-color: rgba(255, 255, 255, 0.146);   /* LASTTOUCHES */
+  min-width: 150px;
+  max-width: 100%;
+  min-height: 150vh;
+  max-height: 200vh;
+  display: grid;
+  grid-template-rows: 2% 79% 2%;
+  
+ }
+
+ /* .top {
+  width: 100%;
+  height: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+ } */
+
+ /* .banner {
+  visibility: collapse;
+ } */
+
+ #banner-spacer{
+  width: 100%;
+  min-width: 5px;
+
+  visibility: none;
+ }
+
+ .banner:before, .banner:after {
+  /* width: auto; */
+  min-width: 1px ;
+  max-height: 1px;
+  /* margin: 0; */
+ }
+ 
+ /* h1 {
+  
+  /* font-family: 'Petit Formal Script', cursive; */
+  /* color: rgb(97, 150, 170); */
+  /* LASTTOUCHES #a7cee3 (skyblue) or goldenrod ??? *
+  font-size: 2em;
+  /* margin: 0; 
+ }
+
+ h1 {
+  font-family: 'Petit Formal Script', cursive;
+  color: #a7cee3;
+  /* LASTTOUCHES #a7cee3 (skyblue) or goldenrod ??? 
+  font-size: 1em;
+  margin: 1%;
+ } */
+
+ .tiny-screen-h1 {
+  font-size: 10px;
+ }
+ 
+ .tiny-banner {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  /* justify-content: space-around;
+  align-items: center; */
+ 
+ 
+ }
+ 
+  .middle {
+   margin-top: 1px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: nowrap;
+   width: 100%;
+   max-width: 400px;
+   /* min-width: 100%; */
+   max-height: 200px;
+   min-height: 95%;
+   overflow-y: hidden;
+   overflow-x: hidden;
+  }
+ 
+  .family-portrait {
+   transform: scale(0.45);
+   margin: 0;
+   top: 0;
+  }
+  
+  .greeting {
+   position: relative;
+   top: -150px;
+   margin: 0 2rem;
+   color: goldenrod;
+   font-family: 'Petit Formal Script', cursive;
+   font-weight: bold;
+   font-size: .90em;
+   min-height: 400px;
+  }
+
+  .bottom {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+  }
+  
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
