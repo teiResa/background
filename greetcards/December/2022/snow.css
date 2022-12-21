@@ -1,0 +1,62 @@
+
+body {
+ background-color: darkseagreen;
+}
+
+
+.content-container {
+ margin: 5vh 5vw;
+ width: 90vw;
+ height: 90vh;
+ background-color: pink;
+ border-radius: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+h1 {
+ color: green;
+ font-size: 1em;
+}
+
+.banner {
+ width: 100%;
+ height: 4rem;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+}
+
+.banner:before, .banner:after {
+ content: "";
+ flex: 1 1;
+ border-bottom: 10px double darkseagreen;
+ opacity: .4;
+ margin: auto;
+}
+
+#banner-spacer{
+ content: "";
+ width: 6%;
+ border-bottom: 10px double darkseagreen;
+ opacity: .4;
+}
+
+
+
+
+.modal-backdrop.show {
+ opacity: .01; 
+ /* LASTTOUCHES make more visible before sending out card */
+}
+.modal-backdrop {
+ background-color: #000;
+ height: 100vh;
+ left: 0;
+ position: fixed;
+ top: 0;
+ width: 100vw;
+ z-index: 1050;
+}
