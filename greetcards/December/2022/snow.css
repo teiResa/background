@@ -1,6 +1,6 @@
 
 body {
- background-color: darkseagreen;
+ background-color: #a7cee3;
 }
 
 body::before {
@@ -8,7 +8,7 @@ body::before {
  /*Everything in here was to get the background to fade without effecting anything else.*/
  content: "";
  background: url(https://teiresa.github.io/background/greetcards/December/assets/4594038.jpg); 
- background-size: 300px;
+ background-size: 1600px;
  background-repeat: repeat;
  opacity: .8;
  position:absolute;
@@ -27,8 +27,17 @@ body::before {
  background-color: pink;
  border-radius: 10px;
  display: flex;
+ 
  align-items: center;
  justify-content: center;
+
+ 
+ display: grid;
+ grid-template-rows: 15% 70% 15%;
+}
+
+.content-row {
+ width: 100%;
 }
 
 .family-portrait {
@@ -47,12 +56,13 @@ h1 {
  justify-content: space-around;
  align-items: center;
 
+
 }
 
 .banner:before, .banner:after {
  content: "";
  flex: 1 1;
- border-bottom: 10px double darkseagreen;
+ border-bottom: 10px double #a7cee3;
  opacity: .4;
  margin: auto;
 }
@@ -60,7 +70,7 @@ h1 {
 #banner-spacer{
  content: "";
  width: 6%;
- border-bottom: 10px double darkseagreen;
+ border-bottom: 10px double #a7cee3;
  opacity: .4;
 }
 
