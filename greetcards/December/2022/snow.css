@@ -436,13 +436,15 @@ h1 {
   .greeting {
    position: relative;
    top: -150px;
-   margin: 0 2rem;
+   margin: 0 1rem;
    color: goldenrod;
    font-family: 'Petit Formal Script', cursive;
    font-weight: bold;
    font-size: .90em;
    min-height: 400px;
   }
+
+  
 
   .bottom {
   overflow-x: hidden;
