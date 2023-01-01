@@ -120,8 +120,18 @@ body::before {
  color: goldenrod;
  font-family: 'Cedarville Cursive', cursive;
  font-weight: bold;
- font-size: 1.40em;
+ font-size: 1em;
 }
+
+/*
+.biggy_br{
+
+}
+
+.teeny_br {
+
+}
+*/
 
 
 
