@@ -1,4 +1,6 @@
-
+/*
+THE 6'S ARE THE CIRCLES. 6, 16, 26 ... 196, 206.
+*/
 h1 {
  color: palevioletred;
 }
@@ -58,13 +60,15 @@ h1 {
 
 }
 
+.embedim-shape:nth-child(3):before, .embedim-shape:nth-child(20):before, .embedim-shape:nth-child(60):before, .embedim-shape:nth-child(100):before, .embedim-shape:nth-child(140):before, .embedim-shape:nth-child(180):before, 
 
 .embedim-shape:nth-child(12):before, .embedim-shape:nth-child(22):before, .embedim-shape:nth-child(32):before, .embedim-shape:nth-child(42):before, .embedim-shape:nth-child(52):before, .embedim-shape:nth-child(62):before, .embedim-shape:nth-child(72):before, .embedim-shape:nth-child(82):before, .embedim-shape:nth-child(92):before, .embedim-shape:nth-child(102):before, .embedim-shape:nth-child(112):before, .embedim-shape:nth-child(122):before, .embedim-shape:nth-child(132):before, .embedim-shape:nth-child(142):before, .embedim-shape:nth-child(152):before, .embedim-shape:nth-child(162):before, .embedim-shape:nth-child(172):before, .embedim-shape:nth-child(182):before, .embedim-shape:nth-child(192):before,
 
 .embedim-shape:nth-child(180):before, .embedim-shape:nth-child(181):before, .embedim-shape:nth-child(182):before, .embedim-shape:nth-child(183):before, .embedim-shape:nth-child(184):before, .embedim-shape:nth-child(185):before, .embedim-shape:nth-child(186):before, .embedim-shape:nth-child(187):before, .embedim-shape:nth-child(188):before,.embedim-shape:nth-child(189):before, .embedim-shape:nth-child(198):before 
 {
  font-family: "Font Awesome 5 Free";
- content: "\e4e5";       /* icon: hearts is f004 */
+ content: "\e4e5";       /* icon: computer
+  icon: hearts is f004 */
  display: inline-block;
  padding-right: 3px;
  vertical-align: middle;
@@ -85,7 +89,7 @@ h1 {
  opacity: 1;
 }
 
-
+.embedim-shape:nth-child(130), .embedim-shape:nth-child(140), .embedim-shape:nth-child(150), .embedim-shape:nth-child(160), .embedim-shape:nth-child(170), .embedim-shape:nth-child(180), .embedim-shape:nth-child(190), .embedim-shape:nth-child(200), .embedim-shape:nth-child(210),
 
 .embedim-shape:nth-child(11), .embedim-shape:nth-child(21), .embedim-shape:nth-child(31), .embedim-shape:nth-child(41), .embedim-shape:nth-child(61), .embedim-shape:nth-child(71), .embedim-shape:nth-child(81), .embedim-shape:nth-child(101), .embedim-shape:nth-child(111), .embedim-shape:nth-child(121), .embedim-shape:nth-child(131), .embedim-shape:nth-child(151), .embedim-shape:nth-child(161), .embedim-shape:nth-child(171),.embedim-shape:nth-child(181), .embedim-shape:nth-child(191),
 
@@ -99,12 +103,13 @@ h1 {
  width: 15px;
  height: 15px;
  background-color: rgba(240, 248, 255, 0);
- color: pink;
+ color: rgb(236, 121, 140);
  margin-top:-10px;
 
 
 }
 
+.embedim-shape:nth-child(1), .embedim-shape:nth-child(2), .embedim-shape:nth-child(3), .embedim-shape:nth-child(10), .embedim-shape:nth-child(20), .embedim-shape:nth-child(30), .embedim-shape:nth-child(40), .embedim-shape:nth-child(50), .embedim-shape:nth-child(60), .embedim-shape:nth-child(70), .embedim-shape:nth-child(80), .embedim-shape:nth-child(90), .embedim-shape:nth-child(100), .embedim-shape:nth-child(110),.embedim-shape:nth-child(120), 
 
 .embedim-shape:nth-child(13), .embedim-shape:nth-child(23), .embedim-shape:nth-child(33), .embedim-shape:nth-child(43), .embedim-shape:nth-child(63), .embedim-shape:nth-child(73), .embedim-shape:nth-child(83), .embedim-shape:nth-child(103), .embedim-shape:nth-child(113), .embedim-shape:nth-child(123), .embedim-shape:nth-child(133), .embedim-shape:nth-child(153), .embedim-shape:nth-child(163), .embedim-shape:nth-child(173),.embedim-shape:nth-child(183), .embedim-shape:nth-child(193),
 
@@ -121,6 +126,8 @@ h1 {
 
 
 }
+
+.embedim-shape:nth-child(2):before, .embedim-shape:nth-child(40):before, .embedim-shape:nth-child(80):before, .embedim-shape:nth-child(120):before, .embedim-shape:nth-child(160):before, .embedim-shape:nth-child(200):before, 
 
 .embedim-shape:nth-child(13):before, .embedim-shape:nth-child(23):before, .embedim-shape:nth-child(33):before, .embedim-shape:nth-child(13):before, .embedim-shape:nth-child(63):before, .embedim-shape:nth-child(73):before, .embedim-shape:nth-child(33):before, .embedim-shape:nth-child(103):before, .embedim-shape:nth-child(113):before, .embedim-shape:nth-child(123):before, .embedim-shape:nth-child(113):before, .embedim-shape:nth-child(153):before, .embedim-shape:nth-child(163):before, .embedim-shape:nth-child(173):before,.embedim-shape:nth-child(133):before, .embedim-shape:nth-child(193):before,
 
@@ -146,12 +153,14 @@ h1 {
  font-weight: 900;
  opacity: 1;
 }
+.embedim-shape:nth-child(1):before, .embedim-shape:nth-child(10):before, .embedim-shape:nth-child(30):before, .embedim-shape:nth-child(50):before, .embedim-shape:nth-child(70):before, .embedim-shape:nth-child(80):before, .embedim-shape:nth-child(90):before, .embedim-shape:nth-child(110):before, .embedim-shape:nth-child(130):before, .embedim-shape:nth-child(150):before, 
+.embedim-shape:nth-child(170):before, .embedim-shape:nth-child(190):before, 
 
 .embedim-shape:nth-child(15):before, .embedim-shape:nth-child(25):before, .embedim-shape:nth-child(55):before, .embedim-shape:nth-child(15):before, .embedim-shape:nth-child(65):before, .embedim-shape:nth-child(75):before, .embedim-shape:nth-child(55):before, .embedim-shape:nth-child(105):before, .embedim-shape:nth-child(115):before, .embedim-shape:nth-child(125):before, .embedim-shape:nth-child(115):before, .embedim-shape:nth-child(155):before, .embedim-shape:nth-child(165):before, .embedim-shape:nth-child(175):before,.embedim-shape:nth-child(155):before, .embedim-shape:nth-child(195):before
 
 {
  font-family: "Font Awesome 5 Free";
- content: "\f0eb";  /* icon: lightbulb */
+ content: "\f3cd";  /* icon: mobile phone */
  display: inline-block;
  padding-right: 3px;
  vertical-align: middle;
