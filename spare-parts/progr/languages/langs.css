@@ -64,7 +64,8 @@ h1 {
 .embedim-shape:nth-child(180):before, .embedim-shape:nth-child(181):before, .embedim-shape:nth-child(182):before, .embedim-shape:nth-child(183):before, .embedim-shape:nth-child(184):before, .embedim-shape:nth-child(185):before, .embedim-shape:nth-child(186):before, .embedim-shape:nth-child(187):before, .embedim-shape:nth-child(188):before,.embedim-shape:nth-child(189):before, .embedim-shape:nth-child(198):before 
 {
  font-family: "Font Awesome 5 Free";
- content: "\e4e5";       /* icon: hearts is f004 */
+ content: "\e4e5";       /* icon: computer
+ hearts is f004 */
  display: inline-block;
  padding-right: 3px;
  vertical-align: middle;
@@ -136,22 +137,13 @@ h1 {
  opacity: 1;
 }
 
-.embedim-shape:nth-child(11):before, .embedim-shape:nth-child(21):before, .embedim-shape:nth-child(31):before, .embedim-shape:nth-child(41):before, .embedim-shape:nth-child(61):before, .embedim-shape:nth-child(71):before, .embedim-shape:nth-child(81):before, .embedim-shape:nth-child(101):before, .embedim-shape:nth-child(111):before, .embedim-shape:nth-child(121):before, .embedim-shape:nth-child(131):before, .embedim-shape:nth-child(151):before, .embedim-shape:nth-child(161):before, .embedim-shape:nth-child(171):before,.embedim-shape:nth-child(181):before, .embedim-shape:nth-child(191):before
-{
- font-family: "Font Awesome 5 Free";
- content: "\f544";  /* icon: robot */
- display: inline-block;
- padding-right: 3px;
- vertical-align: middle;
- font-weight: 900;
- opacity: 1;
-}
+.embedim-shape:nth-child(11):before, .embedim-shape:nth-child(21):before, .embedim-shape:nth-child(31):before, .embedim-shape:nth-child(41):before, .embedim-shape:nth-child(61):before, .embedim-shape:nth-child(71):before, .embedim-shape:nth-child(81):before, .embedim-shape:nth-child(101):before, .embedim-shape:nth-child(111):before, .embedim-shape:nth-child(121):before, .embedim-shape:nth-child(131):before, .embedim-shape:nth-child(151):before, .embedim-shape:nth-child(161):before, .embedim-shape:nth-child(171):before,.embedim-shape:nth-child(181):before, .embedim-shape:nth-child(191):before,
 
 .embedim-shape:nth-child(15):before, .embedim-shape:nth-child(25):before, .embedim-shape:nth-child(55):before, .embedim-shape:nth-child(15):before, .embedim-shape:nth-child(65):before, .embedim-shape:nth-child(75):before, .embedim-shape:nth-child(55):before, .embedim-shape:nth-child(105):before, .embedim-shape:nth-child(115):before, .embedim-shape:nth-child(125):before, .embedim-shape:nth-child(115):before, .embedim-shape:nth-child(155):before, .embedim-shape:nth-child(165):before, .embedim-shape:nth-child(175):before,.embedim-shape:nth-child(155):before, .embedim-shape:nth-child(195):before
 
 {
  font-family: "Font Awesome 5 Free";
- content: "\f0eb";  /* icon: lightbulb */
+ content: url('assets/html5.svg');  /* icon: html */
  display: inline-block;
  padding-right: 3px;
  vertical-align: middle;
