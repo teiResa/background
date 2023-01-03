@@ -19,6 +19,16 @@ h1 {
  transition: opacity .15s linear;
 }
 
+
+/* 
+Add this to make the falling shapes into a background:
+ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
+
+#embedim--shape{ z-index:-9999999; }
+.modal-backdrop { z-index: -1050; }
+.modal-backdrop.show { z-index: -1049; }
+*/
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ the snowflakes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
