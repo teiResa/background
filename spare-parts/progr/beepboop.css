@@ -19,14 +19,11 @@ h1 {
  transition: opacity .15s linear;
 }
 
-/* 
-Add this to make the falling shapes into a background:
-ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 
 #embedim--shape{ z-index:-9999999; }
 .modal-backdrop { z-index: -1050; }
 .modal-backdrop.show { z-index: -1049; }
-*/
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ the shapeflakes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
@@ -61,11 +58,8 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 
 }
 
-.embedim-shape:nth-child(14):before, .embedim-shape:nth-child(24):before, .embedim-shape:nth-child(34):before, .embedim-shape:nth-child(44):before, .embedim-shape:nth-child(54):before, .embedim-shape:nth-child(64):before, .embedim-shape:nth-child(74):before, .embedim-shape:nth-child(84):before, .embedim-shape:nth-child(94):before, .embedim-shape:nth-child(104):before, .embedim-shape:nth-child(114):before, .embedim-shape:nth-child(124):before, .embedim-shape:nth-child(134):before, .embedim-shape:nth-child(144):before, .embedim-shape:nth-child(154):before, .embedim-shape:nth-child(164):before, .embedim-shape:nth-child(174):before,.embedim-shape:nth-child(184):before, .embedim-shape:nth-child(194):before,
 
 .embedim-shape:nth-child(12):before, .embedim-shape:nth-child(22):before, .embedim-shape:nth-child(32):before, .embedim-shape:nth-child(42):before, .embedim-shape:nth-child(52):before, .embedim-shape:nth-child(62):before, .embedim-shape:nth-child(72):before, .embedim-shape:nth-child(82):before, .embedim-shape:nth-child(92):before, .embedim-shape:nth-child(102):before, .embedim-shape:nth-child(112):before, .embedim-shape:nth-child(122):before, .embedim-shape:nth-child(132):before, .embedim-shape:nth-child(142):before, .embedim-shape:nth-child(152):before, .embedim-shape:nth-child(162):before, .embedim-shape:nth-child(172):before, .embedim-shape:nth-child(182):before, .embedim-shape:nth-child(192):before,
-
-.embedim-shape:nth-child(18):before, .embedim-shape:nth-child(28):before, .embedim-shape:nth-child(38):before, .embedim-shape:nth-child(48):before, .embedim-shape:nth-child(58):before, .embedim-shape:nth-child(68):before, .embedim-shape:nth-child(78):before, .embedim-shape:nth-child(88):before, .embedim-shape:nth-child(98):before, .embedim-shape:nth-child(108):before, .embedim-shape:nth-child(118):before, .embedim-shape:nth-child(128):before, .embedim-shape:nth-child(138):before, .embedim-shape:nth-child(148):before, .embedim-shape:nth-child(158):before, .embedim-shape:nth-child(168):before, .embedim-shape:nth-child(178):before,.embedim-shape:nth-child(188):before, .embedim-shape:nth-child(198):before,
 
 .embedim-shape:nth-child(180):before, .embedim-shape:nth-child(181):before, .embedim-shape:nth-child(182):before, .embedim-shape:nth-child(183):before, .embedim-shape:nth-child(184):before, .embedim-shape:nth-child(185):before, .embedim-shape:nth-child(186):before, .embedim-shape:nth-child(187):before, .embedim-shape:nth-child(188):before,.embedim-shape:nth-child(189):before, .embedim-shape:nth-child(198):before 
 {
@@ -78,6 +72,18 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
  opacity: 1;
 }
 
+.embedim-shape:nth-child(14):before, .embedim-shape:nth-child(24):before, .embedim-shape:nth-child(34):before, .embedim-shape:nth-child(44):before, .embedim-shape:nth-child(54):before, .embedim-shape:nth-child(64):before, .embedim-shape:nth-child(74):before, .embedim-shape:nth-child(84):before, .embedim-shape:nth-child(94):before, .embedim-shape:nth-child(104):before, .embedim-shape:nth-child(114):before, .embedim-shape:nth-child(124):before, .embedim-shape:nth-child(134):before, .embedim-shape:nth-child(144):before, .embedim-shape:nth-child(154):before, .embedim-shape:nth-child(164):before, .embedim-shape:nth-child(174):before,.embedim-shape:nth-child(184):before, .embedim-shape:nth-child(194):before,
+
+.embedim-shape:nth-child(18):before, .embedim-shape:nth-child(28):before, .embedim-shape:nth-child(38):before, .embedim-shape:nth-child(48):before, .embedim-shape:nth-child(58):before, .embedim-shape:nth-child(68):before, .embedim-shape:nth-child(78):before, .embedim-shape:nth-child(88):before, .embedim-shape:nth-child(98):before, .embedim-shape:nth-child(108):before, .embedim-shape:nth-child(118):before, .embedim-shape:nth-child(128):before, .embedim-shape:nth-child(138):before, .embedim-shape:nth-child(148):before, .embedim-shape:nth-child(158):before, .embedim-shape:nth-child(168):before, .embedim-shape:nth-child(178):before,.embedim-shape:nth-child(188):before, .embedim-shape:nth-child(198):before
+{
+ font-family: "Font Awesome 5 Free";
+ content: "\f5c3";
+ display: inline-block;
+ padding-right: 3px;
+ vertical-align: middle;
+ font-weight: 900;
+ opacity: 1;
+}
 
 
 
@@ -137,12 +143,11 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 
 .embedim-shape:nth-child(19):before, .embedim-shape:nth-child(29):before, .embedim-shape:nth-child(39):before, .embedim-shape:nth-child(49):before, .embedim-shape:nth-child(69):before, .embedim-shape:nth-child(79):before, .embedim-shape:nth-child(99):before, .embedim-shape:nth-child(109):before, .embedim-shape:nth-child(119):before, .embedim-shape:nth-child(129):before, .embedim-shape:nth-child(129):before, .embedim-shape:nth-child(129):before, .embedim-shape:nth-child(139):before, .embedim-shape:nth-child(149):before,.embedim-shape:nth-child(179):before, .embedim-shape:nth-child(199):before
 {
- font-family: "Wingdings";
- content: "ª";  /* or just hearts   wing and web Y' */
+ font-family: "Font Awesome 5 Free";
+ content: "\f013";  /* or just hearts   wing and web Y' */
  display: inline-block;
  padding-right: 3px;
  vertical-align: middle;
  font-weight: 900;
- font-stretch: extra-expanded;
  opacity: 1;
 }
