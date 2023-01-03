@@ -78,6 +78,7 @@ h1 {
 .embedim-shape:nth-child(18):before, .embedim-shape:nth-child(28):before, .embedim-shape:nth-child(38):before, .embedim-shape:nth-child(48):before, .embedim-shape:nth-child(58):before, .embedim-shape:nth-child(68):before, .embedim-shape:nth-child(78):before, .embedim-shape:nth-child(88):before, .embedim-shape:nth-child(98):before, .embedim-shape:nth-child(108):before, .embedim-shape:nth-child(118):before, .embedim-shape:nth-child(128):before, .embedim-shape:nth-child(138):before, .embedim-shape:nth-child(148):before, .embedim-shape:nth-child(158):before, .embedim-shape:nth-child(168):before, .embedim-shape:nth-child(178):before,.embedim-shape:nth-child(188):before, .embedim-shape:nth-child(198):before
 {
  font-family: "Font Awesome 5 Free";
+ content: url('assets/html5.svg'); /*
  content: "\f5c3";    /* icon: swatches */
  display: inline-block;
  padding-right: 3px;
