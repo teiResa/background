@@ -1,25 +1,27 @@
-f6cf
+f6cf dice d20
 
-f447
+f447 tower
 
-f445
+f445 crown
 
-f6c9
+f6c9               N/A   branded?
 
-f730
+f730               N/A   branded?
 
-f6d9
+f6d9 dungeon doorway
 
-f6ca
+f6ca               N/A   branded?
 
-f6d5
+f6d5  dragon
 
-f6e2
+f6e2  ghost
 
-f72b
+f72b  magic wand
 
-f38d
+f38d               N/A   branded?
 
-f714
-f6e8
-e05d
+f714  skull and crossbones
+
+f6e8  wizard hat
+
+e05d  magic hand
