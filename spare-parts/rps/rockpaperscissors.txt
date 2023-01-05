@@ -1,9 +1,9 @@
-f257
+f257 scissors, filled
 
-f255
+f255 fist back, filled
 
-f083
+f083 polaroid like camera
 
-f256
+f256 paper, hand, filled
 
-f259
+f259  spock hand
