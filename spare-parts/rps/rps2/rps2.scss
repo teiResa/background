@@ -1,0 +1,74 @@
+$color1 : rebeccapurple;
+
+
+h1 {
+ color: $color1;
+}
+
+a{
+ color: lighten($color: $color1, $amount: 30%);
+
+ :active {
+ color: $color1;
+}
+}
+
+
+.modal-backdrop.show {
+ opacity: .5;
+}
+.modal-backdrop {
+ background-color: rgba(0, 0, 0, 0);
+ height: 100vh;
+ left: 0;
+ position: fixed;
+ top: 0;
+ width: 100vw;
+ z-index: 1050;
+}
+.fade {
+ transition: opacity .15s linear;
+}
+
+
+
+/* 
+Add this to make the falling shapes into a background:
+ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
+
+#embedim--shape{ z-index:-9999999; }
+.modal-backdrop { z-index: -1050; }
+.modal-backdrop.show { z-index: -1049; }
+*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ the shapeflakes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+#embedim--shape{position:fixed;left:0;top:0;bottom:0;width:100vw;height:100vh;overflow:hidden;z-index:9999999;pointer-events:none}
+
+.embedim-shape{position: absolute;width: 15px;height: 15px;background: $color1 ;border-radius: 50%;margin-top:-10px}
+
+
+// .embedim-shape:nth-child(1){opacity:0.90;transform:translate(17.66vw,-10px) scale(0.99);animation:fall-1 24s -1s linear infinite}@keyframes fall-1{70.00%{transform:translate(21.70vw,70.00vh) scale(0.99)}to{transform:translate(19.68vw, 105vh) scale(0.99)}}
+
+.embedim-shape::nth-child(1){
+ animation: 3s linear 1s infinite running slidein;
+ @keyframes identifier {
+  0% {
+   top: 0;
+   left: 0;
+ }
+ 30% {
+   top: 50px;
+ }
+ 68%,
+ 72% {
+   left: 50px;
+ }
+ 100% {
+   top: 100px;
+   left: 100%;
+ }
+ }
+}
+

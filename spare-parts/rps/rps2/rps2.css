@@ -1,0 +1,102 @@
+h1 {
+  color: rebeccapurple;
+}
+
+a {
+  color: #b38cd9;
+}
+
+a :active {
+  color: rebeccapurple;
+}
+
+.modal-backdrop.show {
+  opacity: .5;
+}
+
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1050;
+}
+
+.fade {
+  -webkit-transition: opacity .15s linear;
+  transition: opacity .15s linear;
+}
+
+/* 
+Add this to make the falling shapes into a background:
+ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
+
+#embedim--shape{ z-index:-9999999; }
+.modal-backdrop { z-index: -1050; }
+.modal-backdrop.show { z-index: -1049; }
+*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ the shapeflakes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#embedim--shape {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 9999999;
+  pointer-events: none;
+}
+
+.embedim-shape {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rebeccapurple;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+
+.embedim-shape::nth-child(1) {
+  -webkit-animation: 3s linear 1s infinite running slidein;
+          animation: 3s linear 1s infinite running slidein;
+}
+
+@-webkit-keyframes identifier {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  30% {
+    top: 50px;
+  }
+  68%,
+  72% {
+    left: 50px;
+  }
+  100% {
+    top: 100px;
+    left: 100%;
+  }
+}
+
+@keyframes identifier {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  30% {
+    top: 50px;
+  }
+  68%,
+  72% {
+    left: 50px;
+  }
+  100% {
+    top: 100px;
+    left: 100%;
+  }
+}
+/*# sourceMappingURL=rps2.css.map */
