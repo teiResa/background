@@ -47,8 +47,8 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
           animation-name: rock;
   -webkit-animation-duration: 1250ms;
           animation-duration: 1250ms;
-  -webkit-animation-delay: 2.3s;
-          animation-delay: 2.3s;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   /* temp, change back to one */
 }
 
@@ -72,8 +72,8 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
           animation-name: paper;
   -webkit-animation-duration: 1250ms;
           animation-duration: 1250ms;
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  -webkit-animation-delay: 1750ms;
+          animation-delay: 1750ms;
 }
 
 .paper:before {
@@ -96,8 +96,8 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
           animation-name: scissors;
   -webkit-animation-duration: 1250ms;
           animation-duration: 1250ms;
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
 }
 
 .scissors:before {

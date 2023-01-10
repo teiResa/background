@@ -54,7 +54,7 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
  position: relative;
  animation-name: rock;
  animation-duration: 1250ms;
- animation-delay: 2.3s; /* temp, change back to one */
+ animation-delay: 500ms; /* temp, change back to one */
 }
 
 .rock:before {
@@ -74,7 +74,7 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
   position: relative;
   animation-name: paper;
   animation-duration: 1250ms;
-  animation-delay: 6s;
+  animation-delay: 1750ms;
 }
 
 .paper:before {
@@ -94,7 +94,7 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
  position: relative;
  animation-name: scissors;
  animation-duration: 1250ms;
- animation-delay: 12s;
+ animation-delay: 3000ms;
 }
 
 .scissors:before {
