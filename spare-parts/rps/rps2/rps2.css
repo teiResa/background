@@ -124,37 +124,37 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 
 @-webkit-keyframes paper {
   0% {
-    color: red;
+    color: rebeccapurple;
     scale: 1.1;
     top: -25vh;
     left: 50vw;
   }
   15% {
-    color: purple;
+    color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 50vw;
   }
   30% {
-    color: blue;
+    color: rebeccapurple;
     scale: 3.1;
     top: 40vh;
     left: 80vw;
   }
   45% {
-    color: green;
+    color: #ff9122;
     scale: 5.0;
     top: 70vh;
     left: 50vw;
   }
   65% {
-    color: yellow;
+    color: rebeccapurple;
     scale: 3.1;
     top: 30vh;
     left: 20vw;
   }
   80% {
-    color: red;
+    color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 50vw;
@@ -169,37 +169,37 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 
 @keyframes paper {
   0% {
-    color: red;
+    color: rebeccapurple;
     scale: 1.1;
     top: -25vh;
     left: 50vw;
   }
   15% {
-    color: purple;
+    color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 50vw;
   }
   30% {
-    color: blue;
+    color: rebeccapurple;
     scale: 3.1;
     top: 40vh;
     left: 80vw;
   }
   45% {
-    color: green;
+    color: #ff9122;
     scale: 5.0;
     top: 70vh;
     left: 50vw;
   }
   65% {
-    color: yellow;
+    color: rebeccapurple;
     scale: 3.1;
     top: 30vh;
     left: 20vw;
   }
   80% {
-    color: red;
+    color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 50vw;
@@ -220,37 +220,37 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 
 @-webkit-keyframes rock {
   0% {
-    color: red;
+    color: rebeccapurple;
     scale: 1.1;
     top: 90vh;
     left: -5vw;
   }
   15% {
-    color: purple;
+    color: rebeccapurple;
     scale: 1.1;
     top: 30vh;
     left: 20vw;
   }
   30% {
-    color: blue;
+    color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 50vw;
   }
   45% {
-    color: green;
+    color: rebeccapurple;
     scale: 3.1;
     top: 40vh;
     left: 80vw;
   }
   65% {
-    color: yellow;
+    color: #ff9122;
     scale: 5.0;
     top: 70vh;
     left: 50vw;
   }
   80% {
-    color: red;
+    color: rebeccapurple;
     scale: 3.1;
     top: 30vh;
     left: 20vw;
@@ -265,37 +265,37 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 
 @keyframes rock {
   0% {
-    color: red;
+    color: rebeccapurple;
     scale: 1.1;
     top: 90vh;
     left: -5vw;
   }
   15% {
-    color: purple;
+    color: rebeccapurple;
     scale: 1.1;
     top: 30vh;
     left: 20vw;
   }
   30% {
-    color: blue;
+    color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 50vw;
   }
   45% {
-    color: green;
+    color: rebeccapurple;
     scale: 3.1;
     top: 40vh;
     left: 80vw;
   }
   65% {
-    color: yellow;
+    color: #ff9122;
     scale: 5.0;
     top: 70vh;
     left: 50vw;
   }
   80% {
-    color: red;
+    color: rebeccapurple;
     scale: 3.1;
     top: 30vh;
     left: 20vw;
@@ -316,103 +316,103 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 
 @-webkit-keyframes scissors {
   0% {
-    color: red;
+    color: rebeccapurple;
     scale: 1.1;
     top: 90vh;
     left: 110vw;
   }
   6% {
-    color: purple;
+    color: rebeccapurple;
     scale: 3.1;
     top: 40vh;
     left: 80vw;
   }
   12% {
-    color: blue;
+    color: rebeccapurple;
     scale: 5.0;
     top: 70vh;
     left: 50vw;
   }
   30% {
-    color: green;
+    color: rebeccapurple;
     scale: 3.1;
     top: 30vh;
     left: 20vw;
   }
   36% {
-    color: yellow;
+    color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 40vw;
   }
   42% {
-    color: red;
+    color: rebeccapurple;
     scale: 0.7;
     top: 40vh;
     left: 70vw;
   }
   60% {
-    color: yellow;
+    color: #ff9122;
     scale: 7.0;
-    top: 43vh;
+    top: 58vh;
     left: 46vw;
   }
   100% {
-    color: rebeccapurple;
-    scale: 9.0;
+    color: yellow;
+    scale: 14.0;
     top: 50vh;
-    left: 46vw;
+    left: 48vw;
   }
 }
 
 @keyframes scissors {
   0% {
-    color: red;
+    color: rebeccapurple;
     scale: 1.1;
     top: 90vh;
     left: 110vw;
   }
   6% {
-    color: purple;
+    color: rebeccapurple;
     scale: 3.1;
     top: 40vh;
     left: 80vw;
   }
   12% {
-    color: blue;
+    color: rebeccapurple;
     scale: 5.0;
     top: 70vh;
     left: 50vw;
   }
   30% {
-    color: green;
+    color: rebeccapurple;
     scale: 3.1;
     top: 30vh;
     left: 20vw;
   }
   36% {
-    color: yellow;
+    color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 40vw;
   }
   42% {
-    color: red;
+    color: rebeccapurple;
     scale: 0.7;
     top: 40vh;
     left: 70vw;
   }
   60% {
-    color: yellow;
+    color: #ff9122;
     scale: 7.0;
-    top: 43vh;
+    top: 58vh;
     left: 46vw;
   }
   100% {
-    color: rebeccapurple;
-    scale: 9.0;
+    color: yellow;
+    scale: 14.0;
     top: 50vh;
-    left: 46vw;
+    left: 48vw;
   }
 }
 /*# sourceMappingURL=rps2.css.map */

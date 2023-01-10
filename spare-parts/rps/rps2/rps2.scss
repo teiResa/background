@@ -1,4 +1,8 @@
 $color1 : rebeccapurple;
+$color1BG: rgb(255, 255, 255);
+$colorSlow: #ff9122;
+$colorExplode: yellow;
+$colorExplodeBG: rgb(64, 58, 100);
 
 
 h1 {
@@ -116,21 +120,21 @@ opacity: 1;
  animation: paper 50ms linear 0.5s infinite running slidein;
  @keyframes paper {
   0% {
-   color: red;
+   color: $color1;
    scale: 1.1;
    //PAPER ENTERNAMCO
    top: -25vh;
    left: 50vw;
  }
  15% { 
-  color: purple;
+  color: $color1;
   scale: 0.7;
   // POSITION B
   top: 10vh;
    left: 50vw;
  }
  30%{
-  color: blue;
+  color: $color1;
   scale: 3.1;
   // POSITION C
    top: 40vh;
@@ -138,7 +142,7 @@ opacity: 1;
    
  }
  45% {
-  color: green;
+  color: $colorSlow;
   scale: 5.0;
   // POSITION D
    top: 70vh;
@@ -146,21 +150,21 @@ opacity: 1;
   
  }
  65% {
-  color: yellow;
+  color: $color1;
   scale: 3.1;
   // POSITION A
    top: 30vh;
    left: 20vw;
  }
  80% {
-  color: red;
+  color: $color1;
   scale: 0.7;
   // POSITION B
   top: 10vh;
    left: 50vw;
  }
  100% {
-  color: yellow;
+  color: $colorExplode;
   scale:7.0;
   // POSITION X
   top: 41vh;
@@ -174,21 +178,21 @@ opacity: 1;
  animation: rock 50ms linear 0.5s infinite running slidein;
  @keyframes rock {
   0% {
-   color: red;
+   color: $color1;
    scale: 1.1;
    //ROCK ENTERNAMCO
    top: 90vh;
    left: -5vw;
  }
  15% { 
-  color: purple;
+  color: $color1;
   scale: 1.1;
   // POSITION A
   top: 30vh;
    left: 20vw;
  }
  30%{
-  color: blue;
+  color: $color1;
   scale: 0.7;
   // POSITION B
    top: 10vh;
@@ -196,7 +200,7 @@ opacity: 1;
    
  }
  45% {
-  color: green;
+  color: $color1;
   scale: 3.1;
   // POSITION C
    top: 40vh;
@@ -204,21 +208,21 @@ opacity: 1;
   
  }
  65% {
-  color: yellow;
+  color: $colorSlow;
   scale: 5.0;
   // POSITION D
    top: 70vh;
    left: 50vw;
  }
  80% {
-  color: red;
+  color: $color1;
   scale: 3.1;
   // POSITION A
   top: 30vh;
    left: 20vw;
  }
  100% {
-  color: yellow;
+  color: $colorExplode;
   scale:7.0;
   // POSITION X
    top: 43vh;
@@ -232,21 +236,21 @@ opacity: 1;
  animation: scissors 50ms linear 0.5s infinite running slidein;
  @keyframes scissors {
   0% {
-   color: red;
+   color: $color1;
    scale: 1.1;
    //SCISSOR ENTERNAMCO
    top: 90vh;
    left: 110vw;
  }
  6% { 
-  color: purple;
+  color: $color1;
   scale: 3.1;
   // POSITION C
    top: 40vh;
    left: 80vw;
  }
  12%{
-  color: blue;
+  color: $color1;
   scale: 5.0;
   // POSITION D
   top: 70vh;
@@ -254,7 +258,7 @@ opacity: 1;
    
  }
  30% {
-  color: green;
+  color: $color1;
   scale: 3.1;
   // POSITION A
   top: 30vh;
@@ -262,32 +266,32 @@ opacity: 1;
   
  }
  36% {
-  color: yellow;
+  color: $color1;
   scale: 0.7;
   // POSITION B
   top: 10vh;
   left: 40vw;
  }
  42% {
-  color: red;
+  color: $color1;
   scale: 0.7;
   // POSITION C
   top: 40vh;
    left: 70vw;
  }
  60%{
-  color: yellow;
+  color: $colorSlow;
   scale:7.0;
   // POSITION X
-   top: 43vh;
+   top: 58vh;
    left: 46vw;
  }
   100% {
-   color: rebeccapurple;
-  scale: 9.0;
+   color: $colorExplode;
+  scale: 14.0;
   // POSITION X
   top:50vh;
-  left: 46vw;
+  left: 48vw;
  }
  }
 }
