@@ -38,65 +38,381 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 .modal-backdrop.show { z-index: -1049; }
 */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ the shapeflakes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#embedim--shape {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  z-index: 9999999;
-  pointer-events: none;
+.rock {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0);
+  position: relative;
+  -webkit-animation-name: rock;
+          animation-name: rock;
+  -webkit-animation-duration: 1250ms;
+          animation-duration: 1250ms;
+  -webkit-animation-delay: 2.3s;
+          animation-delay: 2.3s;
+  /* temp, change back to one */
 }
 
-.embedim-shape {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: rebeccapurple;
-  border-radius: 50%;
-  margin-top: -10px;
+.rock:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f255";
+  /* icon: rock hand */
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  opacity: 1;
+}
+
+.paper {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0);
+  position: relative;
+  -webkit-animation-name: paper;
+          animation-name: paper;
+  -webkit-animation-duration: 1250ms;
+          animation-duration: 1250ms;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.paper:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f256";
+  /* icon: paper hand */
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  opacity: 1;
+}
+
+.scissors {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0);
+  position: relative;
+  -webkit-animation-name: scissors;
+          animation-name: scissors;
+  -webkit-animation-duration: 1250ms;
+          animation-duration: 1250ms;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+.scissors:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f257";
+  /* icon: scissors hand */
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  opacity: 1;
+}
+
+.first-pos {
+  display: inline-block;
+  top: -150px;
 }
 
 .embedim-shape::nth-child(1) {
-  -webkit-animation: 3s linear 1s infinite running slidein;
-          animation: 3s linear 1s infinite running slidein;
+  opacity: 0.30;
+  -webkit-animation: paper 50ms linear 0.5s infinite running slidein;
+          animation: paper 50ms linear 0.5s infinite running slidein;
 }
 
-@-webkit-keyframes identifier {
+@-webkit-keyframes paper {
   0% {
-    top: 0;
-    left: 0;
+    color: red;
+    scale: 1.1;
+    top: -25vh;
+    left: 50vw;
+  }
+  15% {
+    color: purple;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
   }
   30% {
-    top: 50px;
+    color: blue;
+    scale: 3.1;
+    top: 40vh;
+    left: 80vw;
   }
-  68%,
-  72% {
-    left: 50px;
+  45% {
+    color: green;
+    scale: 5.0;
+    top: 70vh;
+    left: 50vw;
+  }
+  65% {
+    color: yellow;
+    scale: 3.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  80% {
+    color: red;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
   }
   100% {
-    top: 100px;
-    left: 100%;
+    color: yellow;
+    scale: 7.0;
+    top: 41vh;
+    left: 53vw;
   }
 }
 
-@keyframes identifier {
+@keyframes paper {
   0% {
-    top: 0;
-    left: 0;
+    color: red;
+    scale: 1.1;
+    top: -25vh;
+    left: 50vw;
+  }
+  15% {
+    color: purple;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
   }
   30% {
-    top: 50px;
+    color: blue;
+    scale: 3.1;
+    top: 40vh;
+    left: 80vw;
   }
-  68%,
-  72% {
-    left: 50px;
+  45% {
+    color: green;
+    scale: 5.0;
+    top: 70vh;
+    left: 50vw;
+  }
+  65% {
+    color: yellow;
+    scale: 3.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  80% {
+    color: red;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
   }
   100% {
-    top: 100px;
-    left: 100%;
+    color: yellow;
+    scale: 7.0;
+    top: 41vh;
+    left: 53vw;
+  }
+}
+
+.embedim-shape::nth-child(1) {
+  opacity: 0.30;
+  -webkit-animation: rock 50ms linear 0.5s infinite running slidein;
+          animation: rock 50ms linear 0.5s infinite running slidein;
+}
+
+@-webkit-keyframes rock {
+  0% {
+    color: red;
+    scale: 1.1;
+    top: 90vh;
+    left: -5vw;
+  }
+  15% {
+    color: purple;
+    scale: 1.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  30% {
+    color: blue;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
+  }
+  45% {
+    color: green;
+    scale: 3.1;
+    top: 40vh;
+    left: 80vw;
+  }
+  65% {
+    color: yellow;
+    scale: 5.0;
+    top: 70vh;
+    left: 50vw;
+  }
+  80% {
+    color: red;
+    scale: 3.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  100% {
+    color: yellow;
+    scale: 7.0;
+    top: 43vh;
+    left: 57vw;
+  }
+}
+
+@keyframes rock {
+  0% {
+    color: red;
+    scale: 1.1;
+    top: 90vh;
+    left: -5vw;
+  }
+  15% {
+    color: purple;
+    scale: 1.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  30% {
+    color: blue;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
+  }
+  45% {
+    color: green;
+    scale: 3.1;
+    top: 40vh;
+    left: 80vw;
+  }
+  65% {
+    color: yellow;
+    scale: 5.0;
+    top: 70vh;
+    left: 50vw;
+  }
+  80% {
+    color: red;
+    scale: 3.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  100% {
+    color: yellow;
+    scale: 7.0;
+    top: 43vh;
+    left: 57vw;
+  }
+}
+
+.embedim-shape::nth-child(1) {
+  opacity: 0.30;
+  -webkit-animation: scissors 50ms linear 0.5s infinite running slidein;
+          animation: scissors 50ms linear 0.5s infinite running slidein;
+}
+
+@-webkit-keyframes scissors {
+  0% {
+    color: red;
+    scale: 1.1;
+    top: 90vh;
+    left: 110vw;
+  }
+  6% {
+    color: purple;
+    scale: 3.1;
+    top: 40vh;
+    left: 80vw;
+  }
+  12% {
+    color: blue;
+    scale: 5.0;
+    top: 70vh;
+    left: 50vw;
+  }
+  30% {
+    color: green;
+    scale: 3.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  36% {
+    color: yellow;
+    scale: 0.7;
+    top: 10vh;
+    left: 40vw;
+  }
+  42% {
+    color: red;
+    scale: 0.7;
+    top: 40vh;
+    left: 70vw;
+  }
+  60% {
+    color: yellow;
+    scale: 7.0;
+    top: 43vh;
+    left: 46vw;
+  }
+  100% {
+    color: rebeccapurple;
+    scale: 9.0;
+    top: 50vh;
+    left: 46vw;
+  }
+}
+
+@keyframes scissors {
+  0% {
+    color: red;
+    scale: 1.1;
+    top: 90vh;
+    left: 110vw;
+  }
+  6% {
+    color: purple;
+    scale: 3.1;
+    top: 40vh;
+    left: 80vw;
+  }
+  12% {
+    color: blue;
+    scale: 5.0;
+    top: 70vh;
+    left: 50vw;
+  }
+  30% {
+    color: green;
+    scale: 3.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  36% {
+    color: yellow;
+    scale: 0.7;
+    top: 10vh;
+    left: 40vw;
+  }
+  42% {
+    color: red;
+    scale: 0.7;
+    top: 40vh;
+    left: 70vw;
+  }
+  60% {
+    color: yellow;
+    scale: 7.0;
+    top: 43vh;
+    left: 46vw;
+  }
+  100% {
+    color: rebeccapurple;
+    scale: 9.0;
+    top: 50vh;
+    left: 46vw;
   }
 }
 /*# sourceMappingURL=rps2.css.map */
