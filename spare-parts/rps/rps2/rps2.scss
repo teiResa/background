@@ -115,63 +115,6 @@ opacity: 1;
  
 }
 
-.embedim-shape::nth-child(1){
- opacity:0.30;
- animation: paper 50ms linear 0.5s infinite running slidein;
- @keyframes paper {
-  0% {
-   color: $color1;
-   scale: 1.1;
-   //PAPER ENTERNAMCO
-   top: -25vh;
-   left: 50vw;
- }
- 15% { 
-  color: $color1;
-  scale: 0.7;
-  // POSITION B
-  top: 10vh;
-   left: 50vw;
- }
- 30%{
-  color: $color1;
-  scale: 3.1;
-  // POSITION C
-   top: 40vh;
-   left: 80vw;
-   
- }
- 45% {
-  color: $colorSlow;
-  scale: 5.0;
-  // POSITION D
-   top: 70vh;
-   left: 50vw;
-  
- }
- 65% {
-  color: $color1;
-  scale: 3.1;
-  // POSITION A
-   top: 30vh;
-   left: 20vw;
- }
- 80% {
-  color: $color1;
-  scale: 0.7;
-  // POSITION B
-  top: 10vh;
-   left: 50vw;
- }
- 100% {
-  color: $colorExplode;
-  scale:7.0;
-  // POSITION X
-  top: 41vh;
-  left: 53vw;
- }
- }
-}
 
 .embedim-shape::nth-child(1){
  opacity:0.30;
@@ -184,14 +127,14 @@ opacity: 1;
    top: 90vh;
    left: -5vw;
  }
- 15% { 
+ 6% { 
   color: $color1;
   scale: 1.1;
   // POSITION A
   top: 30vh;
    left: 20vw;
  }
- 30%{
+ 12%{
   color: $color1;
   scale: 0.7;
   // POSITION B
@@ -199,7 +142,7 @@ opacity: 1;
    left: 50vw;
    
  }
- 45% {
+ 30% {
   color: $color1;
   scale: 3.1;
   // POSITION C
@@ -207,29 +150,104 @@ opacity: 1;
    left: 80vw;
   
  }
- 65% {
+ 36% {
   color: $colorSlow;
   scale: 5.0;
   // POSITION D
    top: 70vh;
    left: 50vw;
  }
- 80% {
+ 42% {
   color: $color1;
   scale: 3.1;
   // POSITION A
   top: 30vh;
    left: 20vw;
  }
- 100% {
-  color: $colorExplode;
+ 
+ 60%{
+  color: $colorSlow;
   scale:7.0;
   // POSITION X
-   top: 43vh;
-   left: 57vw;
+   top: 58vh;
+   left: 59vw;
+ }
+  100% {
+   color: $colorExplode;
+  scale: 14.0;
+  // POSITION X
+  top: 50vh;
+  left: 63vw;
  }
  }
 }
+
+.embedim-shape::nth-child(1){
+ opacity:0.30;
+ animation: paper 50ms linear 0.5s infinite running slidein;
+ @keyframes paper {
+  0% {
+   color: $color1;
+   scale: 1.1;
+   //PAPER ENTERNAMCO
+   top: -25vh;
+   left: 50vw;
+ }
+ 6% { 
+  color: $color1;
+  scale: 0.7;
+  // POSITION B
+  top: 10vh;
+   left: 50vw;
+ }
+ 12%{
+  color: $color1;
+  scale: 3.1;
+  // POSITION C
+   top: 40vh;
+   left: 80vw;
+   
+ }
+ 30% {
+  color: $colorSlow;
+  scale: 5.0;
+  // POSITION D
+   top: 70vh;
+   left: 50vw;
+  
+ }
+ 36% {
+  color: $color1;
+  scale: 3.1;
+  // POSITION A
+   top: 30vh;
+   left: 20vw;
+ }
+ 42% {
+  color: $color1;
+  scale: 0.7;
+  // POSITION B
+  top: 10vh;
+   left: 50vw;
+ }
+
+ 60%{
+  color: $colorSlow;
+  scale:7.0;
+  // POSITION X
+   top: 58vh;
+   left: 56vw;
+ }
+  100% {
+   color: $colorExplode;
+  scale: 14.0;
+  // POSITION X
+  top:50vh;
+  left: 55vw;
+ }
+ }
+}
+
 
 .embedim-shape::nth-child(1){
  opacity:0.30;

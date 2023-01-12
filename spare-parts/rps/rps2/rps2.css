@@ -118,102 +118,6 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
 
 .embedim-shape::nth-child(1) {
   opacity: 0.30;
-  -webkit-animation: paper 50ms linear 0.5s infinite running slidein;
-          animation: paper 50ms linear 0.5s infinite running slidein;
-}
-
-@-webkit-keyframes paper {
-  0% {
-    color: rebeccapurple;
-    scale: 1.1;
-    top: -25vh;
-    left: 50vw;
-  }
-  15% {
-    color: rebeccapurple;
-    scale: 0.7;
-    top: 10vh;
-    left: 50vw;
-  }
-  30% {
-    color: rebeccapurple;
-    scale: 3.1;
-    top: 40vh;
-    left: 80vw;
-  }
-  45% {
-    color: #ff9122;
-    scale: 5.0;
-    top: 70vh;
-    left: 50vw;
-  }
-  65% {
-    color: rebeccapurple;
-    scale: 3.1;
-    top: 30vh;
-    left: 20vw;
-  }
-  80% {
-    color: rebeccapurple;
-    scale: 0.7;
-    top: 10vh;
-    left: 50vw;
-  }
-  100% {
-    color: yellow;
-    scale: 7.0;
-    top: 41vh;
-    left: 53vw;
-  }
-}
-
-@keyframes paper {
-  0% {
-    color: rebeccapurple;
-    scale: 1.1;
-    top: -25vh;
-    left: 50vw;
-  }
-  15% {
-    color: rebeccapurple;
-    scale: 0.7;
-    top: 10vh;
-    left: 50vw;
-  }
-  30% {
-    color: rebeccapurple;
-    scale: 3.1;
-    top: 40vh;
-    left: 80vw;
-  }
-  45% {
-    color: #ff9122;
-    scale: 5.0;
-    top: 70vh;
-    left: 50vw;
-  }
-  65% {
-    color: rebeccapurple;
-    scale: 3.1;
-    top: 30vh;
-    left: 20vw;
-  }
-  80% {
-    color: rebeccapurple;
-    scale: 0.7;
-    top: 10vh;
-    left: 50vw;
-  }
-  100% {
-    color: yellow;
-    scale: 7.0;
-    top: 41vh;
-    left: 53vw;
-  }
-}
-
-.embedim-shape::nth-child(1) {
-  opacity: 0.30;
   -webkit-animation: rock 50ms linear 0.5s infinite running slidein;
           animation: rock 50ms linear 0.5s infinite running slidein;
 }
@@ -225,41 +129,47 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
     top: 90vh;
     left: -5vw;
   }
-  15% {
+  6% {
     color: rebeccapurple;
     scale: 1.1;
     top: 30vh;
     left: 20vw;
   }
-  30% {
+  12% {
     color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 50vw;
   }
-  45% {
+  30% {
     color: rebeccapurple;
     scale: 3.1;
     top: 40vh;
     left: 80vw;
   }
-  65% {
+  36% {
     color: #ff9122;
     scale: 5.0;
     top: 70vh;
     left: 50vw;
   }
-  80% {
+  42% {
     color: rebeccapurple;
     scale: 3.1;
     top: 30vh;
     left: 20vw;
   }
+  60% {
+    color: #ff9122;
+    scale: 7.0;
+    top: 58vh;
+    left: 59vw;
+  }
   100% {
     color: yellow;
-    scale: 7.0;
-    top: 43vh;
-    left: 57vw;
+    scale: 14.0;
+    top: 50vh;
+    left: 63vw;
   }
 }
 
@@ -270,41 +180,155 @@ ADD TO PAGE SPECIFIC STYLESHEETS, NOT HERE
     top: 90vh;
     left: -5vw;
   }
-  15% {
+  6% {
     color: rebeccapurple;
     scale: 1.1;
     top: 30vh;
     left: 20vw;
   }
-  30% {
+  12% {
     color: rebeccapurple;
     scale: 0.7;
     top: 10vh;
     left: 50vw;
   }
-  45% {
+  30% {
     color: rebeccapurple;
     scale: 3.1;
     top: 40vh;
     left: 80vw;
   }
-  65% {
+  36% {
     color: #ff9122;
     scale: 5.0;
     top: 70vh;
     left: 50vw;
   }
-  80% {
+  42% {
     color: rebeccapurple;
     scale: 3.1;
     top: 30vh;
     left: 20vw;
   }
+  60% {
+    color: #ff9122;
+    scale: 7.0;
+    top: 58vh;
+    left: 59vw;
+  }
   100% {
     color: yellow;
+    scale: 14.0;
+    top: 50vh;
+    left: 63vw;
+  }
+}
+
+.embedim-shape::nth-child(1) {
+  opacity: 0.30;
+  -webkit-animation: paper 50ms linear 0.5s infinite running slidein;
+          animation: paper 50ms linear 0.5s infinite running slidein;
+}
+
+@-webkit-keyframes paper {
+  0% {
+    color: rebeccapurple;
+    scale: 1.1;
+    top: -25vh;
+    left: 50vw;
+  }
+  6% {
+    color: rebeccapurple;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
+  }
+  12% {
+    color: rebeccapurple;
+    scale: 3.1;
+    top: 40vh;
+    left: 80vw;
+  }
+  30% {
+    color: #ff9122;
+    scale: 5.0;
+    top: 70vh;
+    left: 50vw;
+  }
+  36% {
+    color: rebeccapurple;
+    scale: 3.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  42% {
+    color: rebeccapurple;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
+  }
+  60% {
+    color: #ff9122;
     scale: 7.0;
-    top: 43vh;
-    left: 57vw;
+    top: 58vh;
+    left: 56vw;
+  }
+  100% {
+    color: yellow;
+    scale: 14.0;
+    top: 50vh;
+    left: 55vw;
+  }
+}
+
+@keyframes paper {
+  0% {
+    color: rebeccapurple;
+    scale: 1.1;
+    top: -25vh;
+    left: 50vw;
+  }
+  6% {
+    color: rebeccapurple;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
+  }
+  12% {
+    color: rebeccapurple;
+    scale: 3.1;
+    top: 40vh;
+    left: 80vw;
+  }
+  30% {
+    color: #ff9122;
+    scale: 5.0;
+    top: 70vh;
+    left: 50vw;
+  }
+  36% {
+    color: rebeccapurple;
+    scale: 3.1;
+    top: 30vh;
+    left: 20vw;
+  }
+  42% {
+    color: rebeccapurple;
+    scale: 0.7;
+    top: 10vh;
+    left: 50vw;
+  }
+  60% {
+    color: #ff9122;
+    scale: 7.0;
+    top: 58vh;
+    left: 56vw;
+  }
+  100% {
+    color: yellow;
+    scale: 14.0;
+    top: 50vh;
+    left: 55vw;
   }
 }
 
