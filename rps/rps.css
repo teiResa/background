@@ -1,0 +1,83 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  color: #94bbe9;
+}
+
+i {
+  color: rebeccapurple;
+}
+
+button.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  button.button {
+    border: 2px solid currentcolor;
+  }
+}
+
+button.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.options button {
+  background-color: #eeaeca;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #eeaeca), color-stop(91%, #94bbe9));
+  background: linear-gradient(90deg, #eeaeca 10%, #94bbe9 91%);
+  width: 120px;
+  height: 3em;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.options button :hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.options button :active i {
+  color: #eeaeca;
+}
+
+.content {
+  background-color: rgba(0, 255, 255, 0.26);
+  width: 90vw;
+  height: 90vh;
+}
+
+#embedim--shape {
+  z-index: -9999999;
+}
+
+.modal-backdrop {
+  z-index: -1050;
+}
+
+.modal-backdrop.show {
+  z-index: -1049;
+}
+/*# sourceMappingURL=rps.css.map */

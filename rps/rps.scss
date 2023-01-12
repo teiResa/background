@@ -1,0 +1,65 @@
+$btnColor: rgb(238,174,202) ;
+$gradient: linear-gradient(90deg, rgba(238,174,202,1) 10%, rgba(148,187,233,1) 91%);
+
+* {box-sizing: border-box;}
+
+h1 {
+ color: rgba(148,187,233,1);
+ 
+}
+
+i {
+ color: rebeccapurple;
+
+}
+
+button.button {
+ border: none;
+ background-color: transparent;
+ font-family: inherit;
+ padding: 0;
+ cursor: pointer;
+
+ @media screen and (-ms-high-contrast: active) {
+   border: 2px solid currentcolor;
+ }
+}
+
+button.button {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.options button {
+ background-color: $btnColor;
+ background: $gradient;
+ width: 120px;
+ height: 3em;
+ border: none;
+ border-radius: 10px;
+ padding: 15px 32px;
+ text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  :hover{
+   transition-duration: 0.4s;
+   transform: scale(2.0);
+  }
+  :active{
+   i{color: rgb(238,174,202);}
+   
+  }
+}
+
+.content {
+ background-color: rgba(0, 255, 255, 0.26);
+ width: 90vw;
+ height: 90vh;
+}
+
+#embedim--shape{ z-index:-9999999; }
+.modal-backdrop { z-index: -1050; }
+.modal-backdrop.show { z-index: -1049; }
