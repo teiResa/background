@@ -3,8 +3,19 @@
           box-sizing: border-box;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3vh 2vw;
+}
+
 h1 {
   color: #94bbe9;
+  text-align: center;
 }
 
 i {
@@ -37,36 +48,121 @@ button.button {
           justify-content: center;
 }
 
+@media (max-width: 488px) and (min-width: 250px) {
+  .options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .options button {
   background-color: #eeaeca;
   background: -webkit-gradient(linear, left top, right top, color-stop(10%, #eeaeca), color-stop(91%, #94bbe9));
   background: linear-gradient(90deg, #eeaeca 10%, #94bbe9 91%);
   width: 120px;
-  height: 3em;
+  height: 2.8em;
   border: none;
   border-radius: 10px;
   padding: 15px 32px;
+  margin: 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.options button :hover {
+.options button:hover {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.options button :active i {
-  color: #eeaeca;
+.options button:hover i {
+  color: #67aaf6;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.options button:active {
+  background-color: #daa1ba;
+  background: -webkit-gradient(linear, left top, right top, color-stop(10%, #daa1ba), color-stop(91%, #83a5cc));
+  background: linear-gradient(90deg, #daa1ba 10%, #83a5cc 91%);
+}
+
+.options button:active i {
+  color: #518dd2;
+}
+
+@media (max-width: 488px) and (min-width: 250px) {
+  .options button {
+    width: 220px;
+    height: 3em;
+  }
 }
 
 .content {
   background-color: rgba(0, 255, 255, 0.26);
   width: 90vw;
   height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scoreboard {
+  width: 350px;
+  height: 170px;
+  color: #94bbe9;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scoreboard .scoreboard-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scoreboard .scoreboard-item {
+  display: inline-block;
+  width: 100px;
+}
+
+.scoreboard .scoreboard-head {
+  font-weight: bold;
+  text-align: center;
+}
+
+.scoreboard .scoreboard-score {
+  margin: 0 45%;
 }
 
 #embedim--shape {

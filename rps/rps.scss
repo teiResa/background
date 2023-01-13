@@ -1,11 +1,21 @@
 $btnColor: rgb(238,174,202) ;
 $gradient: linear-gradient(90deg, rgba(238,174,202,1) 10%, rgba(148,187,233,1) 91%);
+$btnColorDark: rgb(218,161,186);
+$gradientDark: linear-gradient(90deg, rgba(218,161,186,1) 10%, rgba(131,165,204,1) 91%);
+$font: rgba(148,187,233,1);
+
 
 * {box-sizing: border-box;}
 
+body {
+ display: flex;
+ justify-content: center;
+ padding: 3vh 2vw;
+}
+
 h1 {
  color: rgba(148,187,233,1);
- 
+ text-align: center;
 }
 
 i {
@@ -31,26 +41,46 @@ button.button {
  justify-content: center;
 }
 
+.options {
+ @media (max-width: 488px) and (min-width: 250px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+}
+
 .options button {
  background-color: $btnColor;
  background: $gradient;
  width: 120px;
- height: 3em;
+ height: 2.8em;
  border: none;
  border-radius: 10px;
  padding: 15px 32px;
+ margin: 12px;
  text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
 
-  :hover{
+  &:hover{
    transition-duration: 0.4s;
-   transform: scale(2.0);
+   transform: scale(1.1);
+   i {
+    color: rgb(103, 170, 246);
+    transform: scale(1.7);
+   }
   }
-  :active{
-   i{color: rgb(238,174,202);}
-   
+  &:active{
+   background-color: $btnColorDark;
+   background: $gradientDark;
+
+   i{color: rgb(81, 141, 210);}
+  }
+
+  @media (max-width: 488px) and (min-width: 250px) {
+   width: 220px;
+   height: 3em;
   }
 }
 
@@ -58,7 +88,47 @@ button.button {
  background-color: rgba(0, 255, 255, 0.26);
  width: 90vw;
  height: 90vh;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
+
+.scoreboard {
+ width: 350px;
+ height: 170px;
+ color: $font;
+
+ display: grid;
+ align-items: center;
+
+ .scoreboard-row {
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .scoreboard-item { 
+  display: inline-block;
+
+  width: 100px;}
+
+ .scoreboard-head {
+  font-weight: bold;
+  text-align: center;
+ }
+
+ // .scoreboard-details {
+
+ // }
+
+ .scoreboard-score {
+  margin: 0 45%;
+ }
+ 
+}
+
 
 #embedim--shape{ z-index:-9999999; }
 .modal-backdrop { z-index: -1050; }
