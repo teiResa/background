@@ -1,0 +1,13 @@
+@font-face {
+ font-family: pepperFont;
+ src: url("Pepper-script/Pepper_script-Regular.otf") format("opentype");
+}
+
+.pepper-script {
+
+ font-family: "pepperFont" ;
+
+ /*
+ font-family: 'Pepper', sans-serif ;
+ */
+}
