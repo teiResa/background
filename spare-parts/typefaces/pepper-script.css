@@ -1,11 +1,21 @@
 @font-face {
- font-family: pepperFont;
- src: url("Pepper-script/Pepper_script-Regular.otf") format("opentype");
+ font-family: 'pepperFont';
+ /*
+ src: url('Pepper-script/Pepper_script-Regular.otf') format('opentype');
+ */
+ src: url('Pepper-script/Pepper_script-Regular.ttf') format('opentype');
+
+
+ src: url('Pepper-script/Pepper_script-Regular.eot'); /* IE9 Compat Modes */
+ src: url('Pepper-script/Pepper_script-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('Pepper-script/Pepper_script-Regular.woff') format('woff'), /* Modern Browsers */
+      url('Pepper-script/Pepper_script-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('Pepper-script/Pepper_script-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 .pepper-script {
 
- font-family: "pepperFont" ;
+ font-family: 'pepperFont' ;
 
  /*
  font-family: 'Pepper', sans-serif ;
